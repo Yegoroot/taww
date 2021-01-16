@@ -39,8 +39,8 @@ export default function IconLabelTabs() {
         aria-label="icon label tabs example"
       >
         <Tab icon={<HomeOutlinedIcon />} label="Home" />
-        <Tab icon={<FavoriteIcon />} label="FAVORITES" />
-        <Tab icon={<PersonPinIcon />} label="NEARBY" />
+        <Tab icon={<FavoriteIcon />} label="Services" />
+        <Tab icon={<PersonPinIcon />} label="Digital" />
         <Tab icon={<PersonPinIcon />} label="NEARBY" />
         <Tab icon={<PersonOutlineOutlinedIcon />} label="My Profile" />
       </Tabs>
