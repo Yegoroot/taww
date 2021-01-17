@@ -7,11 +7,16 @@ import {
   ThemeProvider
 } from '@material-ui/core'
 
-import rtl from 'jss-rtl'
-import { create } from 'jss'
+// translate
+import { I18nextProvider } from 'react-i18next'
+import i18n from 'src/translate/i18n'
+// theme
 import { createTheme } from 'src/theme'
-import reportWebVitals from './reportWebVitals'
+import { create } from 'jss'
+import rtl from 'jss-rtl'
+//
 import App from './App'
+import reportWebVitals from './reportWebVitals'
 import { THEMES } from './constants'
 
 const jss = create({ plugins: [...jssPreset().plugins, rtl()] })
@@ -21,13 +26,15 @@ const theme = createTheme({
 })
 
 ReactDOM.render(
-  <ThemeProvider theme={theme}>
-    <StylesProvider jss={jss}>
-      <React.StrictMode>
-        <App />
-      </React.StrictMode>
-    </StylesProvider>
-  </ThemeProvider>,
+  <I18nextProvider i18n={i18n}>
+    <ThemeProvider theme={theme}>
+      <StylesProvider jss={jss}>
+        <React.StrictMode>
+          <App />
+        </React.StrictMode>
+      </StylesProvider>
+    </ThemeProvider>
+  </I18nextProvider>,
   document.getElementById('root')
 )
 
