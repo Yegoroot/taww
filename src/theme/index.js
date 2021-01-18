@@ -53,9 +53,6 @@ const themesOptions = [
     },
     palette: {
       type: 'light',
-      action: {
-        active: colors.blueGrey[600]
-      },
       background: {
         default: colors.common.white,
         dark: '#f4f6f8',
@@ -68,8 +65,8 @@ const themesOptions = [
         main: '#5850EC'
       },
       text: {
-        primary: colors.blueGrey[900],
-        secondary: colors.blueGrey[600]
+        primary: '#333E4B',
+        secondary: '#516477'
       },
     },
     shadows: softShadows
@@ -78,14 +75,6 @@ const themesOptions = [
     name: THEMES.ONE_DARK,
     palette: {
       type: 'dark',
-      action: {
-        active: 'rgba(255, 255, 255, 0.54)',
-        hover: 'rgba(255, 255, 255, 0.04)',
-        selected: 'rgba(255, 255, 255, 0.08)',
-        disabled: 'rgba(255, 255, 255, 0.26)',
-        disabledBackground: 'rgba(255, 255, 255, 0.12)',
-        focus: 'rgba(255, 255, 255, 0.12)'
-      },
       background: {
         default: '#282C34',
         dark: '#1c2025',
