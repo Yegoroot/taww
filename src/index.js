@@ -1,6 +1,5 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import './style.css'
 import {
   jssPreset,
   StylesProvider,
@@ -14,6 +13,7 @@ import i18n from 'src/translate/i18n'
 import { createTheme } from 'src/theme'
 import { create } from 'jss'
 import rtl from 'jss-rtl'
+import GlobalStyles from 'src/components/GlobalStyle'
 //
 import App from './App'
 import reportWebVitals from './reportWebVitals'
@@ -30,6 +30,7 @@ ReactDOM.render(
     <ThemeProvider theme={theme}>
       <StylesProvider jss={jss}>
         <React.StrictMode>
+          <GlobalStyles />
           <App />
         </React.StrictMode>
       </StylesProvider>
