@@ -41,6 +41,8 @@
     ]
   },
   "devDependencies": {
+    "@types/lodash": "^4.14.167",
+    "@types/react-router-dom": "^5.1.7",
     "babel-eslint": "^10.1.0",
     "eslint": "^7.18.0",
     "eslint-config-airbnb": "^18.2.1",

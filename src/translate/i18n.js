@@ -26,12 +26,12 @@ i18n
       escapeValue: false,
       formatSeparator: ','
     },
-    react: {
-      wait: true,
-      bindI18n: 'languageChanged loaded',
-      bindStore: 'added removed',
-      nsMode: 'default'
-    }
+    // react: {
+    //   wait: true,
+    //   bindI18n: 'languageChanged loaded',
+    //   bindStore: 'added removed',
+    //   nsMode: 'default'
+    // }
   })
 
 export default i18n

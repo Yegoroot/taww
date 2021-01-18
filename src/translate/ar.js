@@ -1,5 +1,11 @@
 export default {
-  a: {
-    b: 'c'
+  translations: {
+    menu: {
+      home: 'Home',
+      services: 'Services',
+      documents: 'Digital Documents',
+      dashboard: 'Dashboard',
+      profile: 'My Profile'
+    }
   }
 }

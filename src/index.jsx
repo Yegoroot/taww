@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {/* Suspense */ } from 'react'
 import ReactDOM from 'react-dom'
 import {
   jssPreset,
@@ -31,7 +31,9 @@ ReactDOM.render(
       <StylesProvider jss={jss}>
         <React.StrictMode>
           <GlobalStyles />
+          {/* <Suspense fallback={null}> */}
           <App />
+          {/* </Suspense> */}
         </React.StrictMode>
       </StylesProvider>
     </ThemeProvider>

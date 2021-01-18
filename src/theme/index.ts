@@ -8,7 +8,22 @@ import { THEMES } from 'src/constants'
 import { softShadows, strongShadows } from './shadows'
 import typography from './typography'
 
-const baseOptions = {
+interface Theme {
+  theme: string;
+  responsiveFontSizes?: boolean;
+  direction?: string
+}
+
+type ThemeOptions ={
+  name?: string;
+  overrides?: {};
+  direction?: any;
+  palette?: any;
+  shadows?: any;
+  typography?: any;
+}
+
+const baseOptions: ThemeOptions = {
   direction: 'ltr',
   typography,
   overrides: {
@@ -38,7 +53,7 @@ const baseOptions = {
   }
 }
 
-const themesOptions = [
+const themesOptions: Array<ThemeOptions> = [
   {
     name: THEMES.LIGHT,
     overrides: {
@@ -66,7 +81,7 @@ const themesOptions = [
       },
       text: {
         primary: '#333E4B',
-        secondary: '#516477'
+        secondary: '#80868c'
       },
     },
     shadows: softShadows
@@ -95,8 +110,12 @@ const themesOptions = [
   }
 ]
 
+const defaultP = {
+  theme: 'light'
+}
+
 // eslint-disable-next-line import/prefer-default-export
-export const createTheme = (config = {}) => {
+export const createTheme = (config: Theme = defaultP) => {
   let themeOptions = themesOptions.find((theme) => theme.name === config.theme)
 
   if (!themeOptions) {
