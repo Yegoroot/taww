@@ -31,13 +31,12 @@ ReactDOM.render(
       <StylesProvider jss={jss}>
         <React.StrictMode>
           <GlobalStyles />
-          {/* <Suspense fallback={null}> */}
           <App />
-          {/* </Suspense> */}
         </React.StrictMode>
       </StylesProvider>
     </ThemeProvider>
   </I18nextProvider>,
+
   document.getElementById('root')
 )
 
