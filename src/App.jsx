@@ -4,73 +4,51 @@ import { makeStyles } from '@material-ui/core/styles'
 import {
   BrowserRouter as Router,
   Switch,
+  Redirect,
   Route,
 } from 'react-router-dom'
-
 import Menu from 'src/components/Menu'
+import HomePage from 'src/views/Home'
+import ServicesPage from 'src/views/Services'
 
-const useStyles = makeStyles({
-  root: {
-    flexGrow: 1,
-    display: 'flex',
+const useStyles = makeStyles((theme) => ({
+  content: {
+    padding: 20,
+    backgroundImage: `url('./images/background/${theme.name}.png')`,
     height: '100%',
-    flexDirection: 'column',
-    justifyContent: 'flex-end'
+    backgroundSize: '60%',
+    backgroundRepeat: 'no-repeat',
+    backgroundPosition: 'bottom right'
   },
-  menu: {
-    display: 'grid',
-    justifyContent: 'space-between',
-    gridTemplateColumns: '1fr 1fr 1fr 1fr 1fr',
-    overflow: 'hidden'
-  },
-  iconWrap: {
-    display: 'flex',
-    width: '100%',
-    flexDirection: 'column',
-    paddingTop: 6
-  },
-  svg: {
-    textAlign: 'center',
-  },
-  title: {
-    whiteSpace: 'nowrap',
-    textAlign: 'center',
-    overflow: 'hidden',
-    textTransform: 'capitalize',
-    textOverflow: 'ellipsis',
-  }
-})
 
-function HomePage() {
-  return <h2>Home</h2>
-}
-
-function Services() {
-  return (
-    <h2>
-      sdf
-    </h2>
-  )
-}
+}))
 
 export default function IconLabelTabs() {
   const classes = useStyles()
 
   return (
-    <div className={classes.root}>
-      <Router>
+    <Router>
+      <div className={classes.content}>
         <Switch>
           <Route path="/home">
             <HomePage />
           </Route>
-          <Route path="/services">
-            <Services />
+          <Route
+            exact
+            path="/services"
+          >
+            <ServicesPage />
+          </Route>
+          <Route
+            exact
+            path="/"
+          >
+            <Redirect to="/home" />
           </Route>
         </Switch>
+      </div>
+      <Menu />
 
-        <Menu />
-
-      </Router>
-    </div>
+    </Router>
   )
 }

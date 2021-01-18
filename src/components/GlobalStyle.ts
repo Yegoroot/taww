@@ -11,8 +11,8 @@ const useStyles = makeStyles((theme) => createStyles({
       '-webkit-font-smoothing': 'antialiased',
       '-moz-osx-font-smoothing': 'grayscale',
       // [theme.breakpoints.up('md')]: {
-      height: '100%',
       // },
+      height: '100%',
       width: '100%'
     },
     body: {
@@ -21,6 +21,8 @@ const useStyles = makeStyles((theme) => createStyles({
       height: '100%',
       width: '100%',
       lineHeight: 1.5,
+      backgroundColor: theme.palette.background.default,
+      color: theme.palette.text.primary,
     },
     '#root': {
       height: '100%',
@@ -40,7 +42,6 @@ const useStyles = makeStyles((theme) => createStyles({
 
 const GlobalStyles = () => {
   useStyles()
-
   return null
 }
 

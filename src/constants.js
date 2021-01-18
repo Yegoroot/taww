@@ -4,5 +4,5 @@ export const DEFAULT_LANGUAGE = 'en'
 
 export const THEMES = {
   LIGHT: 'LIGHT',
-  ONE_DARK: 'ONE_DARK',
+  DARK: 'DARK',
 }
