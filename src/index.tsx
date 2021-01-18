@@ -15,7 +15,7 @@ import { create } from 'jss'
 import rtl from 'jss-rtl'
 import GlobalStyles from 'src/components/GlobalStyle'
 //
-import App from './App'
+import App from 'src/App'
 import reportWebVitals from './reportWebVitals'
 import { THEMES } from './constants'
 
