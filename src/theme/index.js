@@ -62,10 +62,7 @@ const themesOptions = [
         paper: colors.common.white
       },
       primary: {
-        main: colors.indigo[600]
-      },
-      error: {
-        main: '#f44336'
+        main: '#1fa99a'
       },
       secondary: {
         main: '#5850EC'
@@ -73,14 +70,6 @@ const themesOptions = [
       text: {
         primary: colors.blueGrey[900],
         secondary: colors.blueGrey[600]
-      },
-      rainbow: {
-        level0: colors.indigo[400],
-        level1: colors.lightBlue[500],
-        level2: colors.cyan[500],
-        level3: colors.teal[500],
-        level4: colors.green[500],
-        level5: colors.lightGreen[500],
       },
     },
     shadows: softShadows
@@ -103,10 +92,7 @@ const themesOptions = [
         paper: '#282C34'
       },
       primary: {
-        main: '#8a85ff'
-      },
-      error: {
-        main: '#f44336'
+        main: '#1fa99a'
       },
       secondary: {
         main: '#8a85ff'
@@ -114,14 +100,6 @@ const themesOptions = [
       text: {
         primary: '#e6e5e8',
         secondary: '#adb0bb'
-      },
-      rainbow: {
-        level0: colors.blue[400],
-        level1: colors.lightBlue[400],
-        level2: colors.cyan[400],
-        level3: colors.teal[400],
-        level4: colors.green[400],
-        level5: colors.lightGreen[400],
       },
     },
     shadows: strongShadows
