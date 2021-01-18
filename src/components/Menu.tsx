@@ -46,27 +46,27 @@ const useStyles = makeStyles((theme) => ({
 const buttons = [
   {
     title: 'home',
-    link: '/app/home',
+    link: '/home',
     icon: <Home />
   },
   {
     title: 'services',
-    link: '/app/services',
+    link: '/services',
     icon: <Grid />
   },
   {
     title: 'documents',
-    link: '/login',
+    link: '/documents',
     icon: <Wallet />
   },
   {
     title: 'dashboard',
-    link: '/app/dashboard',
+    link: '/dashboard',
     icon: <Dashboard />
   },
   {
     title: 'profile',
-    link: '/app/profile',
+    link: '/profile',
     icon: <Profile />
   },
 ]
