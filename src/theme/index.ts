@@ -76,9 +76,9 @@ const themesOptions: Array<ThemeOptions> = [
       primary: {
         main: '#1fa99a'
       },
-      secondary: {
-        main: '#5850EC'
-      },
+      // secondary: {
+      //   main: '#5850EC'
+      // },
       text: {
         primary: '#333E4B',
         secondary: '#80868c'
@@ -87,20 +87,20 @@ const themesOptions: Array<ThemeOptions> = [
     shadows: softShadows
   },
   {
-    name: THEMES.ONE_DARK,
+    name: THEMES.DARK,
     palette: {
       type: 'dark',
       background: {
-        default: '#282C34',
+        default: '#0f1217',
         dark: '#1c2025',
-        paper: '#282C34'
+        paper: '#0f1217'
       },
       primary: {
         main: '#1fa99a'
       },
-      secondary: {
-        main: '#8a85ff'
-      },
+      // secondary: {
+      //   main: '#8a85ff'
+      // },
       text: {
         primary: '#e6e5e8',
         secondary: '#adb0bb'
