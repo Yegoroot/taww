@@ -14,7 +14,7 @@ interface Theme {
   direction?: string
 }
 
-type ThemeOptions ={
+export type ThemeOptions ={
   name?: string;
   overrides?: {};
   direction?: any;
