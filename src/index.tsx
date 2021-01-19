@@ -22,7 +22,7 @@ import { THEMES } from './constants'
 const jss = create({ plugins: [...jssPreset().plugins, rtl()] })
 const theme = createTheme({
   direction: 'ltr',
-  theme: THEMES.LIGHT
+  theme: THEMES.DARK
 })
 
 ReactDOM.render(

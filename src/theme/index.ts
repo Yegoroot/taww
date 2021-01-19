@@ -27,6 +27,16 @@ const baseOptions: ThemeOptions = {
   direction: 'ltr',
   typography,
   overrides: {
+    MuiOutlinedInput: {
+      root: {
+        borderRadius: 10,
+        '&$focused': {
+          '& fieldset': {
+            borderColor: '#80868c !important',
+          }
+        }
+      }
+    },
     MuiLinearProgress: {
       root: {
         borderRadius: 3,
