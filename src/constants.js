@@ -7,3 +7,8 @@ export const THEMES = {
   LIGHT: 'LIGHT',
   DARK: 'DARK',
 }
+
+export const my = {
+  numberIqama: 12345678,
+  name: 'Vasya Pupkin'
+}

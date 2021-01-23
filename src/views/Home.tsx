@@ -1,5 +1,5 @@
 import React from 'react'
-import SliderMain from 'src/components/SliderMain'
+import SwiperHome from 'src/components/Swiper/SwiperHome'
 import { makeStyles } from '@material-ui/core'
 
 const useStyles = makeStyles((/* theme */) => ({
@@ -12,7 +12,7 @@ const Home = () => {
   return (
     <div className={classes.root}>
 
-      <SliderMain />
+      <SwiperHome />
     </div>
   )
 }
