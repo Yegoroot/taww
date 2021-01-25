@@ -4,14 +4,14 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import SwiperCore, { EffectCoverflow } from 'swiper'
 import { makeStyles } from '@material-ui/core'
 import 'swiper/swiper.min.css'
-
+import { UserType } from 'src/constants'
 import Pagination from './Pagination'
 import { SlideIqama, SlideNumberIqama } from './Slides'
 
 const useStyles = makeStyles(() => ({
   root: {
     overflow: 'hidden',
-    height: '100%'
+    // height: '100%'
   },
   swiper: {
     // height: '25%',
@@ -32,7 +32,7 @@ const useStyles = makeStyles(() => ({
 }))
 SwiperCore.use([EffectCoverflow])
 
-const SwiperHome = () => {
+const SwiperHome = ({ user }: {user: UserType}) => {
   const classes = useStyles()
   const [marker, setMarker] = useState(false)
   return (
@@ -50,13 +50,13 @@ const SwiperHome = () => {
           <SlideIqama />
         </SwiperSlide>
         <SwiperSlide>
-          <SlideNumberIqama />
+          <SlideNumberIqama user={user} />
         </SwiperSlide>
         <SwiperSlide>
           <SlideIqama />
         </SwiperSlide>
         <SwiperSlide>
-          <SlideNumberIqama />
+          <SlideNumberIqama user={user} />
         </SwiperSlide>
       </Swiper>
       <Pagination marker={marker} />

@@ -8,6 +8,11 @@ export const THEMES = {
   DARK: 'DARK',
 }
 
+export type UserType = {
+  userName: String,
+  userNumberIqama: number
+}
+
 export const user = {
   userNumberIqama: 12345678,
   userName: 'واسيى بوبكين'

@@ -4,9 +4,7 @@ import clsx from 'clsx'
 import useSettings from 'src/hooks/useSettings'
 import Iqama from 'src/assets/norm.png'
 import Photo from 'src/assets/photo.png'
-import { user } from 'src/constants'
-
-const { userName, userNumberIqama } = user
+import { UserType } from 'src/constants'
 
 const useStyles = makeStyles((theme) => ({
   image: {
@@ -88,8 +86,9 @@ export const SlideIqama = () => {
   )
 }
 
-export const SlideNumberIqama = () => {
+export const SlideNumberIqama = ({ user }: {user: UserType}) => {
   const classes = useStyles()
+  const { userName, userNumberIqama } = user
   const { settings } = useSettings()
 
   return (

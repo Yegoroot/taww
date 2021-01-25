@@ -86,9 +86,9 @@ const themesOptions: Array<ThemeOptions> = [
       primary: {
         main: '#1fa99a'
       },
-      // secondary: {
-      //   main: '#5850EC'
-      // },
+      secondary: {
+        main: '#154f23'
+      },
       text: {
         primary: '#333E4B',
         secondary: '#80868c'
@@ -109,7 +109,7 @@ const themesOptions: Array<ThemeOptions> = [
         main: '#1fa99a'
       },
       secondary: {
-        main: '#1fa940'
+        main: '#154f23'
       },
       text: {
         primary: '#e6e5e8',

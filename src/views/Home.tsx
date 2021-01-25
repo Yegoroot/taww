@@ -1,6 +1,8 @@
 import React from 'react'
 import SwiperHome from 'src/components/Swiper/SwiperHome'
+import Status from 'src/components/Status'
 import { makeStyles } from '@material-ui/core'
+import { user } from 'src/constants'
 
 const useStyles = makeStyles((/* theme */) => ({
   root: {
@@ -12,7 +14,8 @@ const Home = () => {
   return (
     <div className={classes.root}>
 
-      <SwiperHome />
+      <SwiperHome user={user} />
+      <Status user={user} />
     </div>
   )
 }
