@@ -13,6 +13,10 @@ const useStyles = makeStyles((theme: ThemeOptions) => ({
     backgroundRepeat: 'no-repeat',
     backgroundPosition: '100% calc(100% - 70px)'
   },
+  wrapper: {
+    height: '100%',
+    overflow: 'auto'
+  }
 }))
 
 const MainLayout = ({ children }:{children: ReactChild}) => {
@@ -20,8 +24,10 @@ const MainLayout = ({ children }:{children: ReactChild}) => {
 
   return (
     <div className={classes.root}>
-      <Menu />
-      {children}
+      <div className={classes.wrapper}>
+        {children}
+        <Menu />
+      </div>
     </div>
   )
 }

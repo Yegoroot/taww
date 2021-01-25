@@ -11,7 +11,7 @@ import { makeStyles } from '@material-ui/core/styles'
 
 const useStyles = makeStyles((theme) => ({
   menu: {
-    position: 'fixed',
+    position: 'sticky',
     bottom: 0,
     display: 'grid',
     justifyContent: 'space-between',

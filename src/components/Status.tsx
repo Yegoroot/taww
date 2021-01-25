@@ -2,6 +2,7 @@ import React from 'react'
 import { makeStyles } from '@material-ui/core'
 import { UserType } from 'src/constants'
 import QRCode from 'qrcode.react'
+import Update from 'src/components/icons/Update'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -9,7 +10,8 @@ const useStyles = makeStyles((theme) => ({
     marginTop: theme.spacing(1),
     background: `linear-gradient(45deg, ${theme.palette.secondary.main}, ${theme.palette.primary.main})`,
     borderRadius: theme.spacing(1),
-    display: 'flex'
+    display: 'flex',
+    justifyContent: 'space-between'
   },
   qrcode: {
     padding: 10,
@@ -32,12 +34,12 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 14,
     fontWeight: 'bold'
   },
-  infoDesc: {
-
+  updateButton: {
+    marginTop: 10,
+    marginRight: 10,
+    width: 18,
   },
-  infoUpdate: {
 
-  }
 }))
 export default function Status({ user }: {user: UserType}) {
   const classes = useStyles()
@@ -52,8 +54,9 @@ export default function Status({ user }: {user: UserType}) {
       />
       <div className={classes.info}>
         <span className={classes.infoTitle}>No record of infection</span>
-        <span className={classes.infoDesc}>Last update: Tusday 26 January, 12:25 AM</span>
+        <span>Last update: Tusday 26 January, 12:25 AM</span>
       </div>
+      <Update className={classes.updateButton} />
     </div>
   )
 }
