@@ -108,9 +108,9 @@ const themesOptions: Array<ThemeOptions> = [
       primary: {
         main: '#1fa99a'
       },
-      // secondary: {
-      //   main: '#8a85ff'
-      // },
+      secondary: {
+        main: '#1fa940'
+      },
       text: {
         primary: '#e6e5e8',
         secondary: '#adb0bb'

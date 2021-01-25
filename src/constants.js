@@ -8,7 +8,7 @@ export const THEMES = {
   DARK: 'DARK',
 }
 
-export const my = {
-  numberIqama: 12345678,
-  name: 'Vasya Pupkin'
+export const user = {
+  userNumberIqama: 12345678,
+  userName: 'واسيى بوبكين'
 }
