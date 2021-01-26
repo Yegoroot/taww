@@ -1,5 +1,6 @@
 import React from 'react'
-import SwiperHome from 'src/components/Swiper/SwiperHome'
+import SwiperIqama from 'src/components/Swiper/SwiperIqama'
+import SwiperServices from 'src/components/Swiper/SwiperServices'
 import Status from 'src/components/Status'
 import { makeStyles } from '@material-ui/core'
 import { user } from 'src/constants'
@@ -14,8 +15,9 @@ const Home = () => {
   return (
     <div className={classes.root}>
 
-      <SwiperHome user={user} />
+      <SwiperIqama user={user} />
       <Status user={user} />
+      <SwiperServices />
     </div>
   )
 }

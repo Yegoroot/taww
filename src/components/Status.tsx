@@ -17,7 +17,8 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: theme.spacing(1),
     display: 'flex',
     justifyContent: 'space-between',
-    position: 'relative'
+    position: 'relative',
+    color: 'white'
   },
   wrapperQrcode: {
     position: 'relative'

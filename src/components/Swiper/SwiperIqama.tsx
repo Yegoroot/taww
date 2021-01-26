@@ -32,7 +32,7 @@ const useStyles = makeStyles(() => ({
 }))
 SwiperCore.use([EffectCoverflow])
 
-const SwiperHome = ({ user }: {user: UserType}) => {
+const SwiperIqama = ({ user }: {user: UserType}) => {
   const classes = useStyles()
   const [marker, setMarker] = useState(false)
   return (
@@ -64,4 +64,4 @@ const SwiperHome = ({ user }: {user: UserType}) => {
   )
 }
 
-export default SwiperHome
+export default SwiperIqama

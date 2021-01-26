@@ -15,7 +15,7 @@ type Setting = {
 }
 
 const defaultSettings: Setting = {
-  theme: THEMES.DARK,
+  theme: THEMES.LIGHT,
   lang
 }
 
