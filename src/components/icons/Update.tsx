@@ -1,9 +1,10 @@
 import React from 'react'
 import { SvgIcon } from '@material-ui/core'
 
-export default function Profile({ className }: {className: any}) {
+export default function Profile({ className, onClick }: {className: any, onClick: any}) {
   return (
     <SvgIcon
+      onClick={onClick}
       className={className}
       viewBox="0 0 32 32"
       xmlns="http://www.w3.org/2000/svg"

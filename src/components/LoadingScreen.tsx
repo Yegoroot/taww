@@ -1,22 +1,16 @@
 import React from 'react'
-
 import {
-  Box,
-  LinearProgress,
+  CircularProgress,
   makeStyles
 } from '@material-ui/core'
 import clsx from 'clsx'
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(() => ({
   root: {
     alignItems: 'center',
-    backgroundColor: theme.palette.background.default,
     display: 'flex',
-    flexDirection: 'column',
-    height: '100%',
     justifyContent: 'center',
-    minHeight: '100%',
-    padding: theme.spacing(3)
+    color: 'white'
   },
   transparent: {
     background: 'none'
@@ -26,26 +20,25 @@ const useStyles = makeStyles((theme) => ({
   }
 }))
 
-const LoadingScreen = ({ transparent, absolute }: {transparent?: any, absolute?: any}) => {
+const LoadingScreen = ({
+  transparent, absolute, color, className
+}:
+  {transparent?: any, absolute?: any, color?: string, className?: any }) => {
   const classes = useStyles()
-  // useEffect(() => {
-  //   NProgress.start()
-
-  //   return () => {
-  //     NProgress.done()
-  //   }
-  // }, [])
 
   return (
-    <div className={clsx({
-      [classes.root]: true,
-      [classes.transparent]: transparent,
-      [classes.absolute]: absolute,
-    })}
+    <div
+      className={clsx({
+        [classes.root]: true,
+        [classes.transparent]: transparent,
+        [classes.absolute]: absolute,
+        [className]: true
+      })}
+      style={{ color }}
     >
-      <Box width={400}>
-        <LinearProgress />
-      </Box>
+      <CircularProgress
+        color="inherit"
+      />
     </div>
   )
 }
