@@ -7,6 +7,7 @@ import { DOMAIN } from 'src/constants'
 
 const useStyles = makeStyles((theme: ThemeOptions) => ({
   root: {
+    backgroundColor: theme.palette.background.dark,
     backgroundImage: `url('${DOMAIN}images/background/${theme.name}.png')`,
     height: '100%',
     backgroundSize: '60%',

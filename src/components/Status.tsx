@@ -47,7 +47,8 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 11,
     display: 'flex',
     flexDirection: 'column',
-    justifyContent: 'center'
+    justifyContent: 'center',
+    flex: 1
   },
   infoTitle: {
     fontSize: 14,

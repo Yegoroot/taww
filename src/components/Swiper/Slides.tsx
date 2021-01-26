@@ -37,9 +37,9 @@ const useStyles = makeStyles((theme) => ({
     bottom: 10,
     right: 0,
     width: '23%',
-    height: '10%',
+    height: '13%',
     background: `linear-gradient(45deg, ${theme.palette.secondary.main}, ${theme.palette.primary.main})`,
-    borderRadius: '10px 0px 0px 10px'
+    borderRadius: '7px 0px 0px 7px'
   },
   user: {
     position: 'absolute',

@@ -14,10 +14,13 @@ const useStyles = makeStyles((theme) => ({
     'justify-content': 'space-between'
   },
   title: {
-    color: theme.palette.primary.main
+    color: theme.palette.primary.main,
+    fontWeight: 'bold'
   },
   link: {
-
+    color: theme.palette.text.secondary,
+    fontSize: 13,
+    fontWeight: 500
   },
   wrapSlide: {
     display: 'flex',
@@ -37,6 +40,7 @@ const useStyles = makeStyles((theme) => ({
     padding: '16px 0px',
     marginBottom: 5,
     borderRadius: 10,
+    boxShadow: theme.shadows[1],
     background: theme.palette.background.default,
     color: theme.palette.text.primary
   }
