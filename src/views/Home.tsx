@@ -2,6 +2,7 @@ import React from 'react'
 import SwiperIqama from 'src/components/Swiper/SwiperIqama'
 import SwiperServices from 'src/components/Swiper/SwiperServices'
 import Status from 'src/components/Status'
+import Tabaud from 'src/components/Tabaud'
 import { makeStyles } from '@material-ui/core'
 import { user } from 'src/constants'
 
@@ -18,6 +19,7 @@ const Home = () => {
       <SwiperIqama user={user} />
       <Status user={user} />
       <SwiperServices />
+      <Tabaud />
     </div>
   )
 }

@@ -64,6 +64,11 @@ const routes = [
   },
   {
     exact: true,
+    path: '/temp',
+    component: () => <Redirect to="/app" />
+  },
+  {
+    exact: true,
     guard: GuestGuard,
     path: '/login',
     layout: EmptyLayout,

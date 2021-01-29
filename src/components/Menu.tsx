@@ -53,22 +53,22 @@ const buttons = [
   },
   {
     title: 'services',
-    link: '/app/services',
+    link: '/temp',
     icon: <Grid />
   },
   {
     title: 'documents',
-    link: '/login',
+    link: '/temp',
     icon: <Wallet />
   },
   {
     title: 'dashboard',
-    link: '/app/dashboard',
+    link: '/temp',
     icon: <Dashboard />
   },
   {
     title: 'profile',
-    link: '/app/profile',
+    link: '/temp',
     icon: <Profile />
   },
 ]
