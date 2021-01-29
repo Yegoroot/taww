@@ -51,6 +51,9 @@ const useStyles = makeStyles((theme) => ({
     color: theme.palette.text.primary,
     height: 'auto !important'
   },
+  slideTitle: {
+    color: theme.palette.text.primary,
+  },
   arrow: {
     fontSize: 20,
   }
@@ -76,7 +79,7 @@ const SwiperServices = () => {
         <SwiperSlide className={classes.slide}>
           <div className={classes.wrapSlide}>
             <HealthPassport />
-            <span>
+            <span className={classes.slideTitle}>
               Health Passport
             </span>
           </div>
@@ -84,7 +87,7 @@ const SwiperServices = () => {
         <SwiperSlide className={classes.slide}>
           <div className={classes.wrapSlide}>
             <Microscope />
-            <span>
+            <span className={classes.slideTitle}>
               Covid-19 Test
             </span>
           </div>
@@ -92,7 +95,7 @@ const SwiperServices = () => {
         <SwiperSlide className={classes.slide}>
           <div className={classes.wrapSlide}>
             <HealthPassport />
-            <span>
+            <span className={classes.slideTitle}>
               Health Condition Card
             </span>
           </div>
@@ -100,7 +103,7 @@ const SwiperServices = () => {
         <SwiperSlide className={classes.slide}>
           <div className={classes.wrapSlide}>
             <HealthPassport />
-            <span>
+            <span className={classes.slideTitle}>
               {/* eslint-disable-next-line react/no-unescaped-entities */}
               Children's Education Status
             </span>
@@ -109,7 +112,7 @@ const SwiperServices = () => {
         <SwiperSlide className={classes.slide}>
           <div className={classes.wrapSlide}>
             <HealthPassport />
-            <span>
+            <span className={classes.slideTitle}>
               Health Passport
             </span>
           </div>

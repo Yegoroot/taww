@@ -4,6 +4,7 @@ import SwiperIqama from '../components/Swiper/SwiperIqama'
 import SwiperServices from '../components/Swiper/SwiperServices'
 import Status from '../components/Status'
 import Tabaud from '../components/Tabaud'
+import Notification from '../components/Notification'
 import { user } from '../constants'
 
 const useStyles = makeStyles((/* theme */) => ({
@@ -16,6 +17,7 @@ const Home = () => {
   return (
     <div className={classes.root}>
 
+      <Notification />
       <SwiperIqama user={user} />
       <Status user={user} />
       <SwiperServices />

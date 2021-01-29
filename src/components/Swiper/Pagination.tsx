@@ -8,7 +8,7 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: 'center'
   },
   circle: {
-    background: theme.palette.text.primary,
+    background: theme.palette.text.secondary,
     borderRadius: '50%',
     width: theme.spacing(1),
     height: theme.spacing(1),
