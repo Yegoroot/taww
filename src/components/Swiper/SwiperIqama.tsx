@@ -11,7 +11,8 @@ import { SlideIqama, SlideNumberIqama } from './Slides'
 const useStyles = makeStyles(() => ({
   root: {
     overflow: 'hidden',
-    paddingBottom: 4
+    paddingBottom: 4,
+    // height: '100%'
   },
   swiper: {
     // height: '25%',

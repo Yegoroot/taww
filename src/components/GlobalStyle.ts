@@ -23,6 +23,12 @@ const useStyles = makeStyles((theme) => createStyles({
       lineHeight: 1.5,
       backgroundColor: theme.palette.background.default,
       color: theme.palette.text.primary,
+      // disable select text
+      '-webkit-user-select': 'none',
+      '-webkit-touch-callout': 'none',
+      '-moz-user-select': 'none',
+      '-ms-user-select': 'none',
+      'user-select': 'none',
     },
     '#root': {
       height: '100%',

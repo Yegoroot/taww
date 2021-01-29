@@ -4,6 +4,8 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import { makeStyles } from '@material-ui/core'
 import 'swiper/swiper.min.css'
 import HealthPassport from 'src/components/icons/HealthPassport'
+import Microscope from 'src/components/icons/Microscope'
+import { KeyboardArrowRight } from '@material-ui/icons'
 
 const useStyles = makeStyles((theme) => ({
   root: {},
@@ -20,13 +22,16 @@ const useStyles = makeStyles((theme) => ({
   link: {
     color: theme.palette.text.secondary,
     fontSize: 13,
-    fontWeight: 500
+    fontWeight: 500,
+    display: 'flex',
+    alignItems: 'center'
   },
   wrapSlide: {
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
     textAlign: 'center',
+    color: theme.palette.primary.main,
     fontSize: 13,
     padding: 10,
     '& svg': {
@@ -37,12 +42,17 @@ const useStyles = makeStyles((theme) => ({
   slide: {
     width: '140px !important',
     border: 'solid 1px #fff',
-    padding: '16px 0px',
+    padding: '10px 0px',
+    // paddingBottom: 10,
     marginBottom: 5,
     borderRadius: 10,
     boxShadow: theme.shadows[1],
     background: theme.palette.background.default,
-    color: theme.palette.text.primary
+    color: theme.palette.text.primary,
+    height: 'auto !important'
+  },
+  arrow: {
+    fontSize: 20,
   }
 }))
 
@@ -55,7 +65,7 @@ const SwiperServices = () => {
         <span className={classes.link}>
           Display All
           {' '}
-          &gt;
+          <KeyboardArrowRight className={classes.arrow} />
         </span>
       </div>
 
@@ -73,9 +83,9 @@ const SwiperServices = () => {
         </SwiperSlide>
         <SwiperSlide className={classes.slide}>
           <div className={classes.wrapSlide}>
-            <HealthPassport />
+            <Microscope />
             <span>
-              Health Passport
+              Covid-19 Test
             </span>
           </div>
         </SwiperSlide>
@@ -83,7 +93,7 @@ const SwiperServices = () => {
           <div className={classes.wrapSlide}>
             <HealthPassport />
             <span>
-              Health Passport
+              Health Condition Card
             </span>
           </div>
         </SwiperSlide>
@@ -91,7 +101,8 @@ const SwiperServices = () => {
           <div className={classes.wrapSlide}>
             <HealthPassport />
             <span>
-              Health Passport
+              {/* eslint-disable-next-line react/no-unescaped-entities */}
+              Children's Education Status
             </span>
           </div>
         </SwiperSlide>

@@ -23,7 +23,7 @@ export const restoreSettings = () => {
   let settings = null
 
   try {
-    const storedData = window.localStorage.getItem('settings')
+    const storedData = window.localStorage.getItem('taww_settings')
 
     if (storedData) {
       settings = JSON.parse(storedData)
@@ -38,7 +38,7 @@ export const restoreSettings = () => {
 }
 
 export const storeSettings = (settings: Setting) => {
-  window.localStorage.setItem('settings', JSON.stringify(settings))
+  window.localStorage.setItem('taww_settings', JSON.stringify(settings))
 }
 
 const SettingsContext = createContext({
