@@ -2,6 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import { SettingsProvider } from 'src/contexts/SettingsContext'
 import App from 'src/App'
+import * as serviceWorker from 'src/serviceWorker'
 import reportWebVitals from './reportWebVitals'
 
 ReactDOM.render(
@@ -11,6 +12,14 @@ ReactDOM.render(
 
   document.getElementById('root')
 )
+
+serviceWorker.register({
+  // onSuccess: () => store.dispatch(initServiceWorker()),
+  onUpdate: (reg: any) => {
+    console.log('onUpdate callback', reg)
+    // store.dispatch(onCheckUpdateServiceWorker(reg))
+  }
+})
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
