@@ -1,7 +1,7 @@
 import React from 'react'
 
-import Input from 'src/components/Input'
-import LockIcon from 'src/components/icons/inputs/Lock'
+import Input from '../components/Input'
+import LockIcon from '../components/icons/inputs/Lock'
 
 const Login = () => (
   <div>

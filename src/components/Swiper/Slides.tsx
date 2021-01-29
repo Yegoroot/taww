@@ -1,10 +1,10 @@
 import React from 'react'
 import { makeStyles } from '@material-ui/core'
 import clsx from 'clsx'
-import useSettings from 'src/hooks/useSettings'
-import Iqama from 'src/assets/norm.png'
-import Photo from 'src/assets/photo.png'
-import { UserType } from 'src/constants'
+import { UserType } from '../../constants'
+import useSettings from '../../hooks/useSettings'
+import Iqama from '../../assets/norm.png'
+import Photo from '../../assets/photo.png'
 
 const useStyles = makeStyles((theme) => ({
   image: {

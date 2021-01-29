@@ -1,13 +1,13 @@
 import React from 'react'
 import { Button, Paper } from '@material-ui/core'
 import { NavLink } from 'react-router-dom'
-import Dashboard from 'src/components/icons/menu/Dashboard'
-import Profile from 'src/components/icons/menu/Profile'
-import Wallet from 'src/components/icons/menu/Wallet'
-import Grid from 'src/components/icons/menu/Grid'
-import Home from 'src/components/icons/menu/Home'
 import { useTranslation } from 'react-i18next'
 import { makeStyles } from '@material-ui/core/styles'
+import Dashboard from './icons/menu/Dashboard'
+import Profile from './icons/menu/Profile'
+import Wallet from './icons/menu/Wallet'
+import Grid from './icons/menu/Grid'
+import Home from './icons/menu/Home'
 
 const useStyles = makeStyles((theme) => ({
   menu: {

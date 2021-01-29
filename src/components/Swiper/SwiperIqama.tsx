@@ -1,10 +1,9 @@
-/* eslint-disable import/extensions */
 import React, { useState } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import SwiperCore, { EffectCoverflow } from 'swiper'
 import { makeStyles } from '@material-ui/core'
 import 'swiper/swiper.min.css'
-import { UserType } from 'src/constants'
+import { UserType } from '../../constants'
 import Pagination from './Pagination'
 import { SlideIqama, SlideNumberIqama } from './Slides'
 

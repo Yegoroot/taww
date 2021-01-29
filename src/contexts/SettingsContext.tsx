@@ -5,7 +5,7 @@ import React, {
   ReactChild
 } from 'react'
 import _ from 'lodash'
-import { THEMES, DEFAULT_LANGUAGE } from 'src/constants'
+import { THEMES, DEFAULT_LANGUAGE } from '../constants'
 
 const lang = localStorage.getItem('i18nextLng') || DEFAULT_LANGUAGE
 

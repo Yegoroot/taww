@@ -3,9 +3,9 @@ import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { makeStyles } from '@material-ui/core'
 import 'swiper/swiper.min.css'
-import HealthPassport from 'src/components/icons/HealthPassport'
-import Microscope from 'src/components/icons/Microscope'
 import { KeyboardArrowRight } from '@material-ui/icons'
+import HealthPassport from '../icons/HealthPassport'
+import Microscope from '../icons/Microscope'
 
 const useStyles = makeStyles((theme) => ({
   root: {},

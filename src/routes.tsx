@@ -9,11 +9,11 @@ import {
   Redirect,
   Route
 } from 'react-router-dom'
-import DashboardLayout from 'src/layouts/DashboardLayout'
-import EmptyLayout from 'src/layouts/EmptyLayout'
-import LoadingScreen from 'src/components/LoadingScreen'
-import AuthGuard from 'src/components/AuthGuard'
-import GuestGuard from 'src/components/GuestGuard'
+import DashboardLayout from './layouts/DashboardLayout'
+import EmptyLayout from './layouts/EmptyLayout'
+import LoadingScreen from './components/LoadingScreen'
+import AuthGuard from './components/AuthGuard'
+import GuestGuard from './components/GuestGuard'
 
 type RouteR = {
   exact?: boolean;
@@ -72,7 +72,7 @@ const routes = [
     guard: GuestGuard,
     path: '/login',
     layout: EmptyLayout,
-    component: lazy(() => import('src/views/Login'))
+    component: lazy(() => import('./views/Login'))
   },
   {
     path: '/app',
@@ -87,12 +87,12 @@ const routes = [
       {
         exact: true,
         path: '/app/home',
-        component: lazy(() => import('src/views/Home'))
+        component: lazy(() => import('./views/Home'))
       },
       {
         exact: true,
         path: '/app/services',
-        component: lazy(() => import('src/views/Services'))
+        component: lazy(() => import('./views/Services'))
       },
       {
         component: () => <Redirect to="/404" />

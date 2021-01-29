@@ -1,18 +1,18 @@
 import React from 'react'
 import { BrowserRouter } from 'react-router-dom'
-import routes, { renderRoutes } from 'src/routes'
-import useSettings from 'src/hooks/useSettings'
-import { createTheme } from 'src/theme'
 import { create } from 'jss'
 import rtl from 'jss-rtl'
 import { I18nextProvider } from 'react-i18next'
-import i18n from 'src/translate/i18n'
-import GlobalStyles from 'src/components/GlobalStyle'
 import {
   jssPreset,
   StylesProvider,
   ThemeProvider
 } from '@material-ui/core'
+import routes, { renderRoutes } from './routes'
+import useSettings from './hooks/useSettings'
+import { createTheme } from './theme/index'
+import i18n from './translate/i18n'
+import GlobalStyles from './components/GlobalStyle'
 
 const jss = create({ plugins: [...jssPreset().plugins, rtl()] })
 

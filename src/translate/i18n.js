@@ -2,7 +2,7 @@ import i18n from 'i18next'
 import LanguageDetector from 'i18next-browser-languagedetector'
 import { initReactI18next } from 'react-i18next'
 import XHR from 'i18next-xhr-backend'
-import { DEBUG_I18, DEFAULT_LANGUAGE } from 'src/constants'
+import { DEBUG_I18, DEFAULT_LANGUAGE } from '../constants'
 import languageAR from './ar'
 import languageEN from './en'
 

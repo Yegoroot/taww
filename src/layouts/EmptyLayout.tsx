@@ -1,8 +1,8 @@
 /* eslint-disable react/prop-types */
 import React, { ReactChild } from 'react'
 import { makeStyles } from '@material-ui/core'
-import { ThemeOptions } from 'src/theme/index'
-import { DOMAIN } from 'src/constants'
+import { ThemeOptions } from '../theme/index'
+import { DOMAIN } from '../constants'
 
 const useStyles = makeStyles((theme: ThemeOptions) => ({
   root: {

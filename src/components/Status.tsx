@@ -1,13 +1,13 @@
 import React, { useState } from 'react'
 import { makeStyles } from '@material-ui/core'
-import { UserType } from 'src/constants'
 import QRCode from 'qrcode.react'
-import Update from 'src/components/icons/Update'
 import moment from 'moment'
-import 'moment/locale/ar'
-import useSettings from 'src/hooks/useSettings'
-import LoadingScreen from 'src/components/LoadingScreen'
 import clsx from 'clsx'
+import { UserType } from '../constants'
+import Update from './icons/Update'
+import 'moment/locale/ar'
+import useSettings from '../hooks/useSettings'
+import LoadingScreen from './LoadingScreen'
 
 const useStyles = makeStyles((theme) => ({
   root: {

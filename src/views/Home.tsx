@@ -1,10 +1,10 @@
 import React from 'react'
-import SwiperIqama from 'src/components/Swiper/SwiperIqama'
-import SwiperServices from 'src/components/Swiper/SwiperServices'
-import Status from 'src/components/Status'
-import Tabaud from 'src/components/Tabaud'
 import { makeStyles } from '@material-ui/core'
-import { user } from 'src/constants'
+import SwiperIqama from '../components/Swiper/SwiperIqama'
+import SwiperServices from '../components/Swiper/SwiperServices'
+import Status from '../components/Status'
+import Tabaud from '../components/Tabaud'
+import { user } from '../constants'
 
 const useStyles = makeStyles((/* theme */) => ({
   root: {

@@ -1,8 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { SettingsProvider } from 'src/contexts/SettingsContext'
-import App from 'src/App'
-import * as serviceWorker from 'src/serviceWorker'
+import * as serviceWorker from './serviceWorker'
+import { SettingsProvider } from './contexts/SettingsContext'
+import App from './App'
 // import reportWebVitals from './reportWebVitals'
 
 ReactDOM.render(
