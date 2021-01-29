@@ -12,10 +12,10 @@ const useStyles = makeStyles((theme: ThemeOptions) => ({
     height: '100%',
     backgroundSize: '60%',
     backgroundRepeat: 'no-repeat',
-    backgroundPosition: '100% calc(100% - 70px)'
+    backgroundPosition: '100% calc(100% - 70px)',
   },
   wrapper: {
-    height: '100%',
+    paddingBottom: 70,
     overflow: 'auto'
   }
 }))

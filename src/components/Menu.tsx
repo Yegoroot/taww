@@ -11,13 +11,15 @@ import { makeStyles } from '@material-ui/core/styles'
 
 const useStyles = makeStyles((theme) => ({
   menu: {
-    position: 'sticky',
+    // position: 'sticky',
+    position: 'fixed',
     bottom: 0,
     display: 'grid',
     justifyContent: 'space-between',
     gridTemplateColumns: '1fr 1fr 1fr 1fr 1fr',
     width: '100%',
     padding: '0 5px',
+    zIndex: 1,
     overflow: 'hidden'
   },
   iconWrap: {
