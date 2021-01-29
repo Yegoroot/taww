@@ -25,15 +25,15 @@ const useStyles = makeStyles((theme) => ({
     flex: 1
   },
   infoTitle: {
-    fontSize: 13,
+    fontSize: 14,
     margin: '0 10px'
   },
   downloadButton: {
     fontSize: 30
   },
   img: {
-    width: 30,
-    'border-radius': 7
+    width: 40,
+    'border-radius': theme.spacing(1)
   }
 
 }))
