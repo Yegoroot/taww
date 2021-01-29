@@ -17,7 +17,7 @@
   "Scope": "/",
   "start_url": "/",
   "display": "standalone",
-  "theme_color": "#ffc",
-  "background_color": "#ffc",
+  "theme_color": "#f4f6f8",
+  "background_color": "#f4f6f8",
   "splash_pages": null
 }
