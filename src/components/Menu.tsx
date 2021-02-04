@@ -53,7 +53,7 @@ const buttons = [
   },
   {
     title: 'services',
-    link: '/temp',
+    link: '/app/services',
     icon: <Grid />
   },
   {
