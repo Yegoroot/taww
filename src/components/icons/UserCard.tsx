@@ -49,8 +49,6 @@ export default function Wallet() {
         />
         <line
           stroke="#1fa99a"
-          strokeLinecap="null"
-          strokeLinejoin="null"
           id="svg_13"
           y2="75.39985"
           x2="93.76718"
@@ -64,8 +62,6 @@ export default function Wallet() {
         <line
           stroke="#1fa99a"
           transform="rotate(90.1897201538086 99.10658264160156,41.26800537109377) "
-          strokeLinecap="null"
-          strokeLinejoin="null"
           id="svg_14"
           y2="41.26801"
           x2="124.24803"
@@ -146,8 +142,6 @@ export default function Wallet() {
           fill="none"
         />
         <line
-          strokeLinecap="null"
-          strokeLinejoin="null"
           id="svg_31"
           y2="20.77431"
           x2="81.62246"
@@ -160,8 +154,6 @@ export default function Wallet() {
           fill="none"
         />
         <line
-          strokeLinecap="null"
-          strokeLinejoin="null"
           id="svg_32"
           y2="35.3761"
           x2="81.91745"
@@ -174,8 +166,6 @@ export default function Wallet() {
           fill="none"
         />
         <line
-          strokeLinecap="null"
-          strokeLinejoin="null"
           id="svg_34"
           y2="50.86285"
           x2="81.76995"

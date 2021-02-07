@@ -4,9 +4,18 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import { makeStyles } from '@material-ui/core'
 import 'swiper/swiper.min.css'
 import { KeyboardArrowRight } from '@material-ui/icons'
-import HealthPassport from '../icons/HealthPassport'
-// import Microscope from '../icons/Microscope'
-import UserCard from '../icons/UserCard'
+import { HealthPassportCard, HealthConditionCard } from '../Services/Services'
+
+export const slideStyle = (t: any) => ({
+  width: '140px !important',
+  height: 'auto !important',
+  border: 'solid 1px #fff',
+  padding: '10px 0px',
+  marginBottom: 5,
+  borderRadius: 10,
+  boxShadow: t.shadows[1],
+  background: t.palette.background.default,
+})
 
 const useStyles = makeStyles((theme) => ({
   root: {},
@@ -27,34 +36,7 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     alignItems: 'center'
   },
-  wrapSlide: {
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    textAlign: 'center',
-    color: theme.palette.primary.main,
-    fontSize: 13,
-    padding: 10,
-    '& svg': {
-      fontSize: 40,
-      marginBottom: 8
-    }
-  },
-  slide: {
-    width: '140px !important',
-    border: 'solid 1px #fff',
-    padding: '10px 0px',
-    // paddingBottom: 10,
-    marginBottom: 5,
-    borderRadius: 10,
-    boxShadow: theme.shadows[1],
-    background: theme.palette.background.default,
-    color: theme.palette.text.primary,
-    height: 'auto !important'
-  },
-  slideTitle: {
-    color: theme.palette.text.primary,
-  },
+  slide: slideStyle(theme),
   arrow: {
     fontSize: 20,
   }
@@ -78,53 +60,11 @@ const SwiperServices = () => {
         slidesPerView="auto"
       >
         <SwiperSlide className={classes.slide}>
-          <div className={classes.wrapSlide}>
-            <HealthPassport />
-            <span className={classes.slideTitle}>
-              Health Passport
-            </span>
-          </div>
+          <HealthPassportCard />
         </SwiperSlide>
         <SwiperSlide className={classes.slide}>
-          <div className={classes.wrapSlide}>
-            <UserCard />
-            <span className={classes.slideTitle}>
-              Health Condition Card
-            </span>
-          </div>
+          <HealthConditionCard />
         </SwiperSlide>
-        {/* <SwiperSlide className={classes.slide}>
-          <div className={classes.wrapSlide}>
-            <Microscope />
-            <span className={classes.slideTitle}>
-              Covid-19 Test
-            </span>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide className={classes.slide}>
-          <div className={classes.wrapSlide}>
-            <HealthPassport />
-            <span className={classes.slideTitle}>
-              Health Condition Card
-            </span>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide className={classes.slide}>
-          <div className={classes.wrapSlide}>
-            <HealthPassport />
-            <span className={classes.slideTitle}>
-              Children's Education Status
-            </span>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide className={classes.slide}>
-          <div className={classes.wrapSlide}>
-            <HealthPassport />
-            <span className={classes.slideTitle}>
-              Health Passport
-            </span>
-          </div>
-        </SwiperSlide> */}
 
       </Swiper>
     </div>
