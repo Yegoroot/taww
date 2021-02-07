@@ -53,13 +53,17 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 16
   },
   userPhoto: {
-    width: 50,
+    width: '40%',
     borderRadius: '50%',
     border: 'solid 2px red',
     borderColor: theme.palette.primary.main
   },
   userName: {
-    fontSize: 20
+    fontSize: 30
+  },
+  numberIqama: {
+    fontSize: 22
+
   }
 }))
 
@@ -105,7 +109,7 @@ export const SlideNumberIqama = ({ user }: {user: UserType}) => {
           alt=""
         />
         <span className={classes.userName}>{userName}</span>
-        <span>{userNumberIqama}</span>
+        <span className={classes.numberIqama}>{userNumberIqama}</span>
       </div>
       <img
         className={classes.logo}

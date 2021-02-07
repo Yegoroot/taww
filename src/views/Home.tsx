@@ -1,8 +1,9 @@
 import React from 'react'
 import { makeStyles } from '@material-ui/core'
-import SwiperIqama from '../components/Swiper/SwiperIqama'
+// import SwiperIqama from '../components/Swiper/SwiperIqama'
 import SwiperServices from '../components/Swiper/SwiperServices'
 import Status from '../components/Status'
+import CardUser from '../components/CardUser'
 import Tabaud from '../components/Tabaud'
 import Notification from '../components/Notification'
 import { user } from '../constants'
@@ -18,7 +19,8 @@ const Home = () => {
     <div className={classes.root}>
 
       <Notification />
-      <SwiperIqama user={user} />
+      <CardUser user={user} />
+      {/* <SwiperIqama user={user} /> */}
       <Status user={user} />
       <SwiperServices />
       <Tabaud />
