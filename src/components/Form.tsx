@@ -1,9 +1,11 @@
+/* eslint-disable no-undef */
 /* eslint-disable no-alert */
 /* eslint-disable react/no-unescaped-entities */
 import React, { useState } from 'react'
 import {
   makeStyles, TextField, Button, FormControl, FormHelperText, OutlinedInput
 } from '@material-ui/core'
+// import { useHistory } from 'react-router-dom'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -23,10 +25,11 @@ const useStyles = makeStyles((theme) => ({
 }))
 
 const Form = () => {
+  // const history = useHistory()
   const [values, setValues] = useState({
     name: '',
     numberIqama: '',
-    imgIqama: '',
+    // imgIqama: '',
     photo: ''
   })
 
@@ -50,8 +53,14 @@ const Form = () => {
   }
 
   const onClick = () => {
-    console.log(values)
-    localStorage.setItem('chrome-cache', JSON.stringify(values))
+    const isNotAll = Object.values(values).includes('')
+
+    if (isNotAll) {
+      alert('Not all data was filled in')
+      return
+    }
+    localStorage.setItem('user', JSON.stringify(values))
+    globalThis.location.reload()
   }
 
   const classes = useStyles()
@@ -61,6 +70,7 @@ const Form = () => {
       <TextField
         id="name"
         onChange={onChange}
+        required
         className={classes.input}
         label="Name LastName"
       />
@@ -69,9 +79,10 @@ const Form = () => {
         id="numberIqama"
         onChange={onChange}
         type="number"
+        required
         label="Iqama's Number"
       />
-      <FormControl
+      {/* <FormControl
         fullWidth
         className={classes.input}
         variant="outlined"
@@ -83,17 +94,18 @@ const Form = () => {
           name="img"
           onChange={onChange}
         />
-      </FormControl>
+      </FormControl> */}
       <FormControl
         fullWidth
         className={classes.input}
         variant="outlined"
       >
-        <FormHelperText>Your mini Photo (like in Iqama)</FormHelperText>
+        <FormHelperText>Your mini Photo</FormHelperText>
         <OutlinedInput
           onChange={onChange}
           id="photo"
           type="file"
+          required
           name="img"
         />
       </FormControl>
@@ -101,6 +113,7 @@ const Form = () => {
       <Button
         variant="contained"
         onClick={onClick}
+        color="primary"
       >
         Save
       </Button>

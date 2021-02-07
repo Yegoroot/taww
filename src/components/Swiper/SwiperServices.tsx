@@ -5,7 +5,8 @@ import { makeStyles } from '@material-ui/core'
 import 'swiper/swiper.min.css'
 import { KeyboardArrowRight } from '@material-ui/icons'
 import HealthPassport from '../icons/HealthPassport'
-import Microscope from '../icons/Microscope'
+// import Microscope from '../icons/Microscope'
+import UserCard from '../icons/UserCard'
 
 const useStyles = makeStyles((theme) => ({
   root: {},
@@ -86,6 +87,14 @@ const SwiperServices = () => {
         </SwiperSlide>
         <SwiperSlide className={classes.slide}>
           <div className={classes.wrapSlide}>
+            <UserCard />
+            <span className={classes.slideTitle}>
+              Health Condition Card
+            </span>
+          </div>
+        </SwiperSlide>
+        {/* <SwiperSlide className={classes.slide}>
+          <div className={classes.wrapSlide}>
             <Microscope />
             <span className={classes.slideTitle}>
               Covid-19 Test
@@ -104,7 +113,6 @@ const SwiperServices = () => {
           <div className={classes.wrapSlide}>
             <HealthPassport />
             <span className={classes.slideTitle}>
-              {/* eslint-disable-next-line react/no-unescaped-entities */}
               Children's Education Status
             </span>
           </div>
@@ -116,7 +124,7 @@ const SwiperServices = () => {
               Health Passport
             </span>
           </div>
-        </SwiperSlide>
+        </SwiperSlide> */}
 
       </Swiper>
     </div>

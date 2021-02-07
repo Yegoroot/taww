@@ -63,14 +63,12 @@ const useStyles = makeStyles((theme) => ({
 }))
 export default function Status({ user }: {user: UserType}) {
   const classes = useStyles()
-  const { userNumberIqama } = user
+  const { numberIqama } = user
   const { settings } = useSettings()
   moment.locale(settings.lang)
 
   const [date, setDate] = useState(moment.now())
   const [loading, setLoading] = useState(false)
-
-  console.log(moment.now())
 
   const onUpdate = () => {
     setLoading(true)
@@ -82,7 +80,7 @@ export default function Status({ user }: {user: UserType}) {
   return (
     <div className={classes.root}>
       <QRCode
-        value={`${userNumberIqama}`}
+        value={`${numberIqama}`}
         renderAs="svg"
         className={clsx({ [classes.qrcode]: true, [classes.qrcodeHidden]: loading })}
       />

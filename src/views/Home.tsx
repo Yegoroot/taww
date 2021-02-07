@@ -7,6 +7,7 @@ import CardUser from '../components/CardUser'
 import Tabaud from '../components/Tabaud'
 import Notification from '../components/Notification'
 import { user } from '../constants'
+import Form from '../components/Form'
 
 const useStyles = makeStyles((/* theme */) => ({
   root: {
@@ -15,17 +16,20 @@ const useStyles = makeStyles((/* theme */) => ({
 }))
 const Home = () => {
   const classes = useStyles()
-  return (
-    <div className={classes.root}>
 
-      <Notification />
-      <CardUser user={user} />
-      {/* <SwiperIqama user={user} /> */}
-      <Status user={user} />
-      <SwiperServices />
-      <Tabaud />
-    </div>
-  )
+  return (!localStorage.getItem('user'))
+    ? <Form />
+    : (
+      <div className={classes.root}>
+
+        <Notification />
+        <CardUser user={user} />
+        {/* <SwiperIqama user={user} /> */}
+        <Status user={user} />
+        <SwiperServices />
+        <Tabaud />
+      </div>
+    )
 }
 
 export default Home

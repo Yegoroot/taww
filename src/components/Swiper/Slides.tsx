@@ -4,7 +4,7 @@ import clsx from 'clsx'
 import { UserType } from '../../constants'
 import useSettings from '../../hooks/useSettings'
 import Iqama from '../../assets/norm.png'
-import Photo from '../../assets/photo.png'
+import PhotoDefault from '../../assets/photo.png'
 
 const useStyles = makeStyles((theme) => ({
   image: {
@@ -47,22 +47,26 @@ const useStyles = makeStyles((theme) => ({
     right: '50%',
     transform: 'translate(50%, 10px)',
     display: 'flex',
+    width: '100%',
     flexDirection: 'column',
     alignItems: 'center',
     color: theme.palette.primary.main,
     fontSize: 16
   },
   userPhoto: {
-    width: '40%',
+    width: '20%',
     borderRadius: '50%',
     border: 'solid 2px red',
     borderColor: theme.palette.primary.main
   },
-  userName: {
-    fontSize: 30
+  name: {
+    fontSize: 20,
+    fontWeight: 'bold',
+    marginTop: theme.spacing(1)
   },
   numberIqama: {
-    fontSize: 22
+    fontSize: 17,
+    fontWeight: 'bold'
 
   }
 }))
@@ -92,8 +96,9 @@ export const SlideIqama = () => {
 
 export const SlideNumberIqama = ({ user }: {user: UserType}) => {
   const classes = useStyles()
-  const { userName, userNumberIqama } = user
+  const { name, numberIqama, photo } = user
   const { settings } = useSettings()
+  const src = photo || PhotoDefault
 
   return (
     <div className={classes.photoBlock}>
@@ -105,11 +110,11 @@ export const SlideNumberIqama = ({ user }: {user: UserType}) => {
       <div className={classes.user}>
         <img
           className={classes.userPhoto}
-          src={Photo}
+          src={src}
           alt=""
         />
-        <span className={classes.userName}>{userName}</span>
-        <span className={classes.numberIqama}>{userNumberIqama}</span>
+        <span className={classes.name}>{name}</span>
+        <span className={classes.numberIqama}>{numberIqama}</span>
       </div>
       <img
         className={classes.logo}
