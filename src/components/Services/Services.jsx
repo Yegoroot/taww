@@ -3,7 +3,7 @@ import { makeStyles } from '@material-ui/core'
 import HealthPassportIcon from '../icons/HealthPassport'
 import UserCard from '../icons/UserCard'
 import Family from '../icons/Family'
-// import Microscope from '../icons/Microscope'
+import Microscope from '../icons/Microscope'
 
 const useStyles = makeStyles((theme) => ({
   root: {},
@@ -59,6 +59,18 @@ export const FamilyCard = () => {
       <Family />
       <span className={classes.slideTitle}>
         Family and Sponsored Members
+      </span>
+    </div>
+  )
+}
+export const MicroscopeCard = () => {
+  const classes = useStyles()
+  return (
+
+    <div className={classes.wrapSlide}>
+      <Microscope />
+      <span className={classes.slideTitle}>
+        Covid-19 Test
       </span>
     </div>
   )

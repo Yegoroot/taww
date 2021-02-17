@@ -29,7 +29,7 @@ const Form = () => {
   const [values, setValues] = useState({
     name: '',
     numberIqama: '',
-    // imgIqama: '',
+    photoIqama: '',
     photo: ''
   })
 
@@ -82,19 +82,19 @@ const Form = () => {
         required
         label="Iqama's Number"
       />
-      {/* <FormControl
+      <FormControl
         fullWidth
         className={classes.input}
         variant="outlined"
       >
         <FormHelperText>Iqamq's photo</FormHelperText>
         <OutlinedInput
-          id="imgIqama"
+          id="photoIqama"
           type="file"
           name="img"
           onChange={onChange}
         />
-      </FormControl> */}
+      </FormControl>
       <FormControl
         fullWidth
         className={classes.input}

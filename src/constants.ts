@@ -11,12 +11,16 @@ export const THEMES = {
 export type UserType = {
   name: String,
   numberIqama: number,
-  photo: string
+  photo: string,
+  photoIqama: string,
 }
 
-const { numberIqama, name, photo } = JSON.parse(localStorage.getItem('user') || '{}')
+const {
+  numberIqama, name, photo, photoIqama
+} = JSON.parse(localStorage.getItem('user') || '{}')
 export const user = {
   numberIqama,
   name,
-  photo
+  photo,
+  photoIqama
 }

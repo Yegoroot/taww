@@ -9,32 +9,21 @@ import PhotoDefault from '../../assets/photo.png'
 const useStyles = makeStyles((theme) => ({
   image: {
     width: '100%',
-    boxShadow: theme.shadows[1],
+    // boxShadow: theme.shadows[1],
     borderRadius: 10
-  },
-  iqamaBlock: {
-    position: 'relative'
-  },
-  iqamaImg: {
-    position: 'absolute',
-    width: '94%',
-    top: '3%',
-    right: '3%',
-    boxShadow: theme.shadows[0]
   },
   photoBlock: {
     position: 'relative'
   },
-
   logo: {
     position: 'absolute',
-    bottom: 10,
+    bottom: 14,
     left: 10,
     width: '23%',
   },
   rectangle: {
     position: 'absolute',
-    bottom: 10,
+    bottom: 14,
     right: 0,
     width: '23%',
     height: '13%',
@@ -71,26 +60,18 @@ const useStyles = makeStyles((theme) => ({
   }
 }))
 
-export const SlideIqama = () => {
+export const SlideIqama = ({ user }: {user: UserType}) => {
   const classes = useStyles()
-  const { settings } = useSettings()
-
+  const { photoIqama, } = user
+  const src = photoIqama || Iqama
   return (
-    <div className={classes.iqamaBlock}>
-      <img
-        className={clsx({
-          [classes.image]: true,
-          [classes.iqamaImg]: true
-        })}
-        src={Iqama}
-        alt=""
-      />
-      <img
-        className={classes.image}
-        src={`/images/swiper/${settings.theme}.png`}
-        alt=""
-      />
-    </div>
+    <img
+      className={clsx({
+        [classes.image]: true
+      })}
+      src={src}
+      alt=""
+    />
   )
 }
 

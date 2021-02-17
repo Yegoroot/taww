@@ -47,13 +47,13 @@ const SwiperIqama = ({ user }: {user: UserType}) => {
         onSlideChange={() => setMarker((state) => !state)}
       >
         <SwiperSlide>
-          <SlideIqama />
+          <SlideIqama user={user} />
         </SwiperSlide>
         <SwiperSlide>
           <SlideNumberIqama user={user} />
         </SwiperSlide>
         <SwiperSlide>
-          <SlideIqama />
+          <SlideIqama user={user} />
         </SwiperSlide>
         <SwiperSlide>
           <SlideNumberIqama user={user} />

@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import { makeStyles } from '@material-ui/core'
 import 'swiper/swiper.min.css'
 import { KeyboardArrowRight } from '@material-ui/icons'
-import { HealthPassportCard, HealthConditionCard } from '../Services/Services'
+import { HealthPassportCard, HealthConditionCard, MicroscopeCard } from '../Services/Services'
 
 export const slideStyle = (t: any) => ({
   width: '140px !important',
@@ -64,6 +64,9 @@ const SwiperServices = () => {
         </SwiperSlide>
         <SwiperSlide className={classes.slide}>
           <HealthConditionCard />
+        </SwiperSlide>
+        <SwiperSlide className={classes.slide}>
+          <MicroscopeCard />
         </SwiperSlide>
 
       </Swiper>
