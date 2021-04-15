@@ -5,7 +5,7 @@ const useStyles = makeStyles((theme) => ({
   root: {
     margin: theme.spacing(2),
     marginTop: theme.spacing(4),
-    background: '#cc3737',
+    background: '#b63a52',
     borderRadius: theme.spacing(1),
     display: 'flex',
     'flex-direction': 'column',

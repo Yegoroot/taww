@@ -4,6 +4,7 @@ import HealthPassportIcon from '../icons/HealthPassport'
 import UserCard from '../icons/UserCard'
 import Family from '../icons/Family'
 import Microscope from '../icons/Microscope'
+import Vacine from '../icons/Vacine'
 
 const useStyles = makeStyles((theme) => ({
   root: {},
@@ -69,6 +70,19 @@ export const MicroscopeCard = () => {
 
     <div className={classes.wrapSlide}>
       <Microscope />
+      <span className={classes.slideTitle}>
+        Covid-19 Test
+      </span>
+    </div>
+  )
+}
+
+export const VacineCard = () => {
+  const classes = useStyles()
+  return (
+
+    <div className={classes.wrapSlide}>
+      <Vacine />
       <span className={classes.slideTitle}>
         Covid-19 Test
       </span>

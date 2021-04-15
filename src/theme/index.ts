@@ -84,10 +84,12 @@ const themesOptions: Array<ThemeOptions> = [
         paper: colors.common.white
       },
       primary: {
-        main: '#1fa99a'
+        main: '#028474',
+        dark: '#00451a'
       },
       secondary: {
-        main: '#318657'
+        main: '#0da254',
+        dark: '#036e2e'
       },
       text: {
         primary: '#333E4B',
@@ -106,10 +108,12 @@ const themesOptions: Array<ThemeOptions> = [
         paper: '#0f1217'
       },
       primary: {
-        main: '#1fa99a'
+        main: '#028474',
+        imunn: '#00451a'
       },
       secondary: {
-        main: '#318657'
+        main: '#0da254',
+        imunn: '#036e2e'
       },
       text: {
         primary: '#e6e5e8',

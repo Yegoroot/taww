@@ -13,12 +13,13 @@ const useStyles = makeStyles((theme) => ({
   root: {
     margin: theme.spacing(2),
     marginTop: theme.spacing(1),
-    background: `linear-gradient(45deg, ${theme.palette.secondary.main}, ${theme.palette.primary.main})`,
+    background: `linear-gradient(0deg, ${theme.palette.secondary.dark}, ${theme.palette.primary.dark})`,
     borderRadius: theme.spacing(1),
     display: 'flex',
     justifyContent: 'space-between',
     position: 'relative',
-    color: 'white'
+    color: 'white',
+    alignItems: 'stretch'
   },
   wrapperQrcode: {
     position: 'relative'
@@ -44,19 +45,27 @@ const useStyles = makeStyles((theme) => ({
     visibility: 'hidden'
   },
   info: {
+    // fontSize: 11,
+    // display: 'flex',
+    // flexDirection: 'column',
+    // justifyContent: 'center',
+    // flex: 1
+
     fontSize: 11,
-    display: 'flex',
-    flexDirection: 'column',
-    justifyContent: 'center',
-    flex: 1
+    flex: 1,
+    display: 'grid',
+    padding: '7px 10px 7px 0px',
+    alignItems: 'stretch',
   },
   infoTitle: {
     fontSize: 14,
+    marginBottom: 10,
     fontWeight: 'bold'
   },
   updateButton: {
     marginTop: 10,
     marginRight: 10,
+    alignSelf: 'center',
     width: 18,
   },
 
@@ -86,7 +95,7 @@ export default function Status({ user }: {user: UserType}) {
       />
       {loading && <LoadingScreen className={classes.loading} />}
       <div className={classes.info}>
-        <span className={classes.infoTitle}>No record of infection</span>
+        <span className={classes.infoTitle}>Immunazed by recovery</span>
         <span>
           Last update:
           {' '}

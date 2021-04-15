@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import i18n from 'i18next'
 import LanguageDetector from 'i18next-browser-languagedetector'
 import { initReactI18next } from 'react-i18next'
@@ -15,7 +16,8 @@ i18n
       ar: languageAR,
       en: languageEN
     },
-    lng: localStorage.getItem('i18nextLng') || DEFAULT_LANGUAGE, /* default language when load the website in browser */
+    // lng: localStorage.getItem('i18nextLng') || DEFAULT_LANGUAGE, /* default language when load the website in browser */
+    lng: DEFAULT_LANGUAGE, /* default language when load the website in browser */
     fallbackLng: localStorage.getItem('i18nextLng') || DEFAULT_LANGUAGE, /* When react i18next not finding any language to as default in borwser */
 
     debug: DEBUG_I18, /* debugger For Development environment */

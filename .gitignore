@@ -6,6 +6,8 @@
 .pnp.js
 /nginx/cert
 
+firebase-debug.log
+
 .firebase
 
 # testing

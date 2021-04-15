@@ -27,7 +27,7 @@ const useStyles = makeStyles((theme) => ({
     right: 0,
     width: '23%',
     height: '13%',
-    background: `linear-gradient(45deg, ${theme.palette.secondary.main}, ${theme.palette.primary.main})`,
+    background: `linear-gradient(0deg, ${theme.palette.secondary.dark}, ${theme.palette.primary.dark})`,
     borderRadius: '7px 0px 0px 7px'
   },
   user: {
@@ -43,10 +43,14 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 16
   },
   userPhoto: {
-    width: '20%',
+
     borderRadius: '50%',
     border: 'solid 2px red',
-    borderColor: theme.palette.primary.main
+    borderColor: theme.palette.primary.main,
+    width: 60,
+    height: 60,
+    padding: theme.spacing(0.5)
+
   },
   name: {
     fontSize: 20,
@@ -89,17 +93,19 @@ export const SlideNumberIqama = ({ user }: {user: UserType}) => {
         alt=""
       />
       <div className={classes.user}>
+
         <img
           className={classes.userPhoto}
           src={src}
           alt=""
         />
+
         <span className={classes.name}>{name}</span>
         <span className={classes.numberIqama}>{numberIqama}</span>
       </div>
       <img
         className={classes.logo}
-        src={`/images/logo${settings.theme}Theme.png`}
+        src="/images/slide.png"
         alt=""
       />
       <span className={classes.rectangle} />
