@@ -49,7 +49,8 @@ const useStyles = makeStyles((theme) => ({
     borderColor: theme.palette.primary.main,
     width: 60,
     height: 60,
-    padding: theme.spacing(0.5)
+    padding: 2
+    // padding: theme.spacing(0.5)
 
   },
   name: {
@@ -96,7 +97,7 @@ export const SlideNumberIqama = ({ user }: {user: UserType}) => {
 
         <img
           className={classes.userPhoto}
-          src={src}
+          src="/images/user.png"
           alt=""
         />
 

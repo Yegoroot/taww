@@ -58,13 +58,13 @@ const useStyles = makeStyles((theme) => ({
     alignItems: 'stretch',
   },
   infoTitle: {
-    fontSize: 14,
+    fontSize: 15,
     marginBottom: 10,
     fontWeight: 'bold'
   },
   updateButton: {
     marginTop: 10,
-    marginRight: 10,
+    marginRight: theme.spacing(1.6),
     alignSelf: 'center',
     width: 18,
   },

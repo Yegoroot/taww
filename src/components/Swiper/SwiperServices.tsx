@@ -5,7 +5,7 @@ import { makeStyles } from '@material-ui/core'
 import 'swiper/swiper.min.css'
 import { KeyboardArrowRight } from '@material-ui/icons'
 import {
-  HealthPassportCard, HealthConditionCard, MicroscopeCard, VacineCard
+  HealthConditionCard, MicroscopeCard, VacineCard
 } from '../Services/Services'
 
 export const slideStyle = (t: any) => ({
@@ -65,11 +65,11 @@ const SwiperServices = () => {
           <VacineCard />
         </SwiperSlide>
         <SwiperSlide className={classes.slide}>
-          <HealthPassportCard />
-        </SwiperSlide>
-        <SwiperSlide className={classes.slide}>
           <HealthConditionCard />
         </SwiperSlide>
+        {/* <SwiperSlide className={classes.slide}>
+          <HealthPassportCard />
+        </SwiperSlide> */}
         <SwiperSlide className={classes.slide}>
           <MicroscopeCard />
         </SwiperSlide>

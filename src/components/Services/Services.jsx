@@ -71,7 +71,7 @@ export const MicroscopeCard = () => {
     <div className={classes.wrapSlide}>
       <Microscope />
       <span className={classes.slideTitle}>
-        Covid-19 Test
+        COVID-19 Test
       </span>
     </div>
   )
@@ -84,7 +84,7 @@ export const VacineCard = () => {
     <div className={classes.wrapSlide}>
       <Vacine />
       <span className={classes.slideTitle}>
-        Covid-19 Test
+        COVID-19 Vaccine
       </span>
     </div>
   )
