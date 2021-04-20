@@ -79,7 +79,7 @@ export const SlideIqama = ({ user }: {user: UserType}) => {
   )
 }
 
-export const SlideNumberIqama = ({ user }: {user: UserType}) => {
+export const SlidePhoto = ({ user }: {user: UserType}) => {
   const classes = useStyles()
   const { name, numberIqama, photo } = user
   const { settings } = useSettings()

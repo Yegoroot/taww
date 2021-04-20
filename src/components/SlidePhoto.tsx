@@ -1,7 +1,7 @@
 import React from 'react'
 import { makeStyles } from '@material-ui/core'
 import { UserType } from '../constants'
-import { SlideNumberIqama } from './Swiper/Slides'
+import { SlidePhoto } from './Swiper/Slides'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -15,7 +15,7 @@ export default function CardUser({ user }: {user: UserType}) {
 
   return (
     <div className={classes.root}>
-      <SlideNumberIqama user={user} />
+      <SlidePhoto user={user} />
     </div>
   )
 }

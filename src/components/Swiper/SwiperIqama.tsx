@@ -5,7 +5,7 @@ import { makeStyles } from '@material-ui/core'
 import 'swiper/swiper.min.css'
 import { UserType } from '../../constants'
 import Pagination from './Pagination'
-import { SlideIqama, SlideNumberIqama } from './Slides'
+import { SlideIqama, SlidePhoto } from './Slides'
 
 const useStyles = makeStyles(() => ({
   root: {
@@ -50,13 +50,13 @@ const SwiperIqama = ({ user }: {user: UserType}) => {
           <SlideIqama user={user} />
         </SwiperSlide>
         <SwiperSlide>
-          <SlideNumberIqama user={user} />
+          <SlidePhoto user={user} />
         </SwiperSlide>
         <SwiperSlide>
           <SlideIqama user={user} />
         </SwiperSlide>
         <SwiperSlide>
-          <SlideNumberIqama user={user} />
+          <SlidePhoto user={user} />
         </SwiperSlide>
       </Swiper>
       <Pagination marker={marker} />
