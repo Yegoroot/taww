@@ -42,8 +42,8 @@ export default {
     fontWeight: 500,
   },
   fontFamily: [
-    '"Roboto"',
     '"Droid Arabic Naskh"',
+    '"Roboto"',
     '"Helvetica"',
     '-apple-system',
     'BlinkMacSystemFont',

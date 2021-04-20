@@ -3,7 +3,7 @@ import { makeStyles } from '@material-ui/core'
 import clsx from 'clsx'
 import { UserType } from '../../constants'
 import useSettings from '../../hooks/useSettings'
-import Iqama from '../../assets/norm.png'
+import Iqama from '../../assets/images/norm.png'
 
 const useStyles = makeStyles((theme) => ({
   image: {

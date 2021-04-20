@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom'
 import * as serviceWorker from './serviceWorker'
 import { SettingsProvider } from './contexts/SettingsContext'
 import App from './App'
+import './assets/css/fonts.css'
 // import reportWebVitals from './reportWebVitals'
 
 ReactDOM.render(

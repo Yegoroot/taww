@@ -1,11 +1,11 @@
 export default {
   translations: {
     menu: {
-      home: 'Home',
-      services: 'Services',
-      documents: 'Digital Documents',
-      dashboard: 'Dashboard',
-      profile: 'My Profile'
+      home: 'الرئيسية',
+      services: 'الخدمات',
+      documents: 'المحفظة الرقمية',
+      dashboard: 'لوحة البيانات',
+      profile: 'حسابي'
     }
   }
 }

@@ -8,6 +8,7 @@ const useStyles = makeStyles((theme) => createStyles({
       padding: 0,
     },
     html: {
+      direction: 'ltr',
       '-webkit-font-smoothing': 'antialiased',
       '-moz-osx-font-smoothing': 'grayscale',
       // [theme.breakpoints.up('md')]: {
@@ -17,7 +18,7 @@ const useStyles = makeStyles((theme) => createStyles({
     },
     body: {
       fontSize: '1rem',
-      fontFamily: '"Roboto", "DINNextLTArabic-Regular", sans-serif',
+      fontFamily: '"Droid Arabic Naskh", "Roboto", sans-serif',
       height: '100%',
       width: '100%',
       lineHeight: 1.5,
