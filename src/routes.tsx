@@ -10,6 +10,7 @@ import {
   Route
 } from 'react-router-dom'
 import DashboardLayout from './layouts/DashboardLayout'
+import HomeLayout from './layouts/HomeLayout'
 import EmptyLayout from './layouts/EmptyLayout'
 import LoadingScreen from './components/LoadingScreen'
 import AuthGuard from './components/AuthGuard'
@@ -87,6 +88,7 @@ const routes = [
       {
         exact: true,
         path: '/app/home',
+        layout: HomeLayout,
         component: lazy(() => import('./views/Home'))
       },
       {
