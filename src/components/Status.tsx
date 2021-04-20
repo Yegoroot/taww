@@ -3,6 +3,7 @@ import { makeStyles } from '@material-ui/core'
 import QRCode from 'qrcode.react'
 import moment from 'moment'
 import clsx from 'clsx'
+import { useTranslation } from 'react-i18next'
 import { UserType } from '../constants'
 import Update from './icons/Update'
 import 'moment/locale/ar'
@@ -13,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
   root: {
     margin: theme.spacing(2),
     marginTop: theme.spacing(1),
-    background: `linear-gradient(0deg, ${theme.palette.secondary.dark}, ${theme.palette.primary.dark})`,
+    background: `linear-gradient(270deg, ${theme.palette.secondary.dark}, ${theme.palette.primary.dark})`,
     borderRadius: theme.spacing(1),
     display: 'flex',
     justifyContent: 'space-between',
@@ -46,26 +47,23 @@ const useStyles = makeStyles((theme) => ({
   },
   info: {
     // fontSize: 11,
-    // display: 'flex',
-    // flexDirection: 'column',
-    // justifyContent: 'center',
-    // flex: 1
-
+    display: 'flex',
+    flexDirection: 'column',
+    alignSelf: 'center',
     fontSize: 11,
     flex: 1,
-    display: 'grid',
     padding: '7px 10px 7px 0px',
     alignItems: 'stretch',
   },
   infoTitle: {
     fontSize: 15,
-    marginBottom: 10,
+    marginBottom: 5,
     fontWeight: 'bold'
   },
   updateButton: {
     marginTop: 10,
     marginRight: theme.spacing(1.6),
-    alignSelf: 'center',
+    // alignSelf: 'center',
     width: 18,
   },
 
@@ -74,6 +72,7 @@ export default function Status({ user }: {user: UserType}) {
   const classes = useStyles()
   const { numberIqama } = user
   const { settings } = useSettings()
+  const { t } = useTranslation()
   moment.locale(settings.lang)
 
   const [date, setDate] = useState(moment.now())
@@ -95,9 +94,9 @@ export default function Status({ user }: {user: UserType}) {
       />
       {loading && <LoadingScreen className={classes.loading} />}
       <div className={classes.info}>
-        <span className={classes.infoTitle}>Immunazed by recovery</span>
+        <span className={classes.infoTitle}>{t('status.info')}</span>
         <span>
-          Last update:
+          {t('status.lastUpdate')}
           {' '}
           {moment(date).format('dddd DD MMMM, LT')}
         </span>

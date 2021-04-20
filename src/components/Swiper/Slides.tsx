@@ -26,7 +26,7 @@ const useStyles = makeStyles((theme) => ({
     right: 0,
     width: '23%',
     height: '13%',
-    background: `linear-gradient(0deg, ${theme.palette.secondary.dark}, ${theme.palette.primary.dark})`,
+    background: `linear-gradient(270deg, ${theme.palette.secondary.dark}, ${theme.palette.primary.dark})`,
     borderRadius: '7px 0px 0px 7px'
   },
   user: {

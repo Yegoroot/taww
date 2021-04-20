@@ -1,5 +1,9 @@
 export default {
   translations: {
+    status: {
+      info: '---',
+      lastUpdate: 'Last update'
+    },
     home: {
       newServices: 'New services',
       displayAll: 'Display All'

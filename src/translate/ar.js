@@ -1,5 +1,9 @@
 export default {
   translations: {
+    status: {
+      info: 'محصّن جرعة أولى',
+      lastUpdate: 'آخر تحديث'
+    },
     home: {
       newServices: 'الخادمات الحديثة',
       displayAll: 'عرض الكل'
