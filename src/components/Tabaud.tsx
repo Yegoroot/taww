@@ -1,5 +1,6 @@
 import React from 'react'
 import { makeStyles } from '@material-ui/core'
+import { useTranslation } from 'react-i18next'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -18,9 +19,7 @@ const useStyles = makeStyles((theme) => ({
       'text-decoration': 'underline',
       marginBottom: theme.spacing(1),
     }
-
   },
-
   info: {
     display: 'flex',
     flexDirection: 'column',
@@ -41,31 +40,23 @@ const useStyles = makeStyles((theme) => ({
     filter: 'brightness(5)',
     'border-radius': theme.spacing(1)
   }
-
 }))
 export default function Tabaud() {
   const classes = useStyles()
+  const { t } = useTranslation()
 
   return (
     <div className={classes.root}>
-
-      <h5>Warning</h5>
+      <h5>{t('tabaut.title')}</h5>
+      <h5>{t('tabaut.desc')}</h5>
       <span className={classes.infoTitle}>
-        {
-          `
-          We strongly encourage to download "Tabaud" App
-          that alerts when contact with someone infected by Covid 19 and safe privacy.
-          Protect your community by downloading the App`
-        }
-
+        { t('tabaut.text') }
       </span>
-
       <img
         className={classes.img}
         src="/images/tabaud.png"
         alt=""
       />
-
     </div>
   )
 }

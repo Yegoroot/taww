@@ -4,8 +4,9 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import { makeStyles } from '@material-ui/core'
 import 'swiper/swiper.min.css'
 import { KeyboardArrowRight } from '@material-ui/icons'
+import { useTranslation } from 'react-i18next'
 import {
-  HealthConditionCard, MicroscopeCard, VacineCard
+  HealthConditionCard, MicroscopeCard, VacineCard, CertifyNumberCard
 } from '../Services/Services'
 
 export const slideStyle = (t: any) => ({
@@ -40,19 +41,20 @@ const useStyles = makeStyles((theme) => ({
   },
   slide: slideStyle(theme),
   arrow: {
+    transform: theme.direction === 'rtl' ? 'rotate(180deg)' : 'none',
     fontSize: 20,
   }
 }))
 
 const SwiperServices = () => {
   const classes = useStyles()
+  const { t } = useTranslation()
   return (
     <div className={classes.root}>
       <div className={classes.header}>
-        <span className={classes.title}> New Services</span>
+        <span className={classes.title}>{t('home.newServices')}</span>
         <span className={classes.link}>
-          Display All
-          {' '}
+          {t('home.displayAll')}
           <KeyboardArrowRight className={classes.arrow} />
         </span>
       </div>
@@ -67,9 +69,9 @@ const SwiperServices = () => {
         <SwiperSlide className={classes.slide}>
           <HealthConditionCard />
         </SwiperSlide>
-        {/* <SwiperSlide className={classes.slide}>
-          <HealthPassportCard />
-        </SwiperSlide> */}
+        <SwiperSlide className={classes.slide}>
+          <CertifyNumberCard />
+        </SwiperSlide>
         <SwiperSlide className={classes.slide}>
           <MicroscopeCard />
         </SwiperSlide>

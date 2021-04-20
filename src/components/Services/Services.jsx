@@ -1,5 +1,6 @@
 import React from 'react'
 import { makeStyles } from '@material-ui/core'
+import { useTranslation } from 'react-i18next'
 import HealthPassportIcon from '../icons/HealthPassport'
 import UserCard from '../icons/UserCard'
 import Family from '../icons/Family'
@@ -31,47 +32,64 @@ const useStyles = makeStyles((theme) => ({
 
 export const HealthPassportCard = () => {
   const classes = useStyles()
+  const { t } = useTranslation()
   return (
     <div className={classes.wrapSlide}>
       <HealthPassportIcon />
       <span className={classes.slideTitle}>
-        Health Passport
+        {t('card.passport')}
       </span>
     </div>
   )
 }
 export const HealthConditionCard = () => {
   const classes = useStyles()
+  const { t } = useTranslation()
   return (
 
     <div className={classes.wrapSlide}>
       <UserCard />
       <span className={classes.slideTitle}>
-        Health Condition Card
+        {t('card.cCard')}
       </span>
     </div>
   )
 }
 export const FamilyCard = () => {
   const classes = useStyles()
+  const { t } = useTranslation()
   return (
 
     <div className={classes.wrapSlide}>
       <Family />
       <span className={classes.slideTitle}>
-        Family and Sponsored Members
+        {t('card.family')}
+      </span>
+    </div>
+  )
+}
+export const CertifyNumberCard = () => {
+  const classes = useStyles()
+  const { t } = useTranslation()
+  return (
+
+    <div className={classes.wrapSlide}>
+      <Family />
+      <span className={classes.slideTitle}>
+        {t('card.cirtifyNumber')}
       </span>
     </div>
   )
 }
 export const MicroscopeCard = () => {
   const classes = useStyles()
+  const { t } = useTranslation()
   return (
 
     <div className={classes.wrapSlide}>
       <Microscope />
       <span className={classes.slideTitle}>
-        COVID-19 Test
+        {t('card.test')}
       </span>
     </div>
   )
@@ -79,12 +97,13 @@ export const MicroscopeCard = () => {
 
 export const VacineCard = () => {
   const classes = useStyles()
+  const { t } = useTranslation()
   return (
 
     <div className={classes.wrapSlide}>
       <Vacine />
       <span className={classes.slideTitle}>
-        COVID-19 Vaccine
+        {t('card.vaccine')}
       </span>
     </div>
   )
