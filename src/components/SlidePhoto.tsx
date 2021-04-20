@@ -5,7 +5,7 @@ import { SlidePhoto } from './Swiper/Slides'
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    margin: theme.spacing(7),
+    margin: theme.spacing(6),
     marginTop: theme.spacing(1)
   }
 

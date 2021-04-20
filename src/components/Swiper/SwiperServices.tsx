@@ -10,11 +10,12 @@ import {
 } from '../Services/Services'
 
 export const slideStyle = (t: any) => ({
-  width: '140px !important',
+  width: '120px !important',
   height: 'auto !important',
   border: 'solid 1px #fff',
   padding: '10px 0px',
   marginBottom: 5,
+  paddingBottom: 30,
   borderRadius: 10,
   boxShadow: t.shadows[1],
   background: t.palette.background.default,
