@@ -2,15 +2,13 @@ import _ from 'lodash'
 import {
   colors,
   createMuiTheme,
-  responsiveFontSizes
 } from '@material-ui/core'
-import { THEMES } from '../constants'
+import { THEMES, DIRECTION } from '../constants'
 import { softShadows, strongShadows } from './shadows'
 import typography from './typography'
 
 interface Theme {
   theme: string;
-  responsiveFontSizes?: boolean;
   direction?: string
 }
 
@@ -24,7 +22,7 @@ export type ThemeOptions ={
 }
 
 const baseOptions: ThemeOptions = {
-  direction: 'ltr',
+  direction: DIRECTION,
   typography,
   overrides: {
     MuiOutlinedInput: {
@@ -137,7 +135,7 @@ export const createTheme = (config: Theme = defaultP) => {
     [themeOptions] = themesOptions
   }
 
-  let theme = createMuiTheme(
+  const theme = createMuiTheme(
     _.merge(
       {},
       baseOptions,
@@ -145,10 +143,6 @@ export const createTheme = (config: Theme = defaultP) => {
       { direction: config.direction }
     )
   )
-
-  if (config.responsiveFontSizes) {
-    theme = responsiveFontSizes(theme)
-  }
 
   return theme
 }

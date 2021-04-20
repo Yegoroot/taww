@@ -5,18 +5,18 @@ import React, {
   ReactChild
 } from 'react'
 import _ from 'lodash'
-import { THEMES, DEFAULT_LANGUAGE } from '../constants'
-
-const lang = localStorage.getItem('i18nextLng') || DEFAULT_LANGUAGE
+import { THEMES, DEFAULT_LANGUAGE, DIRECTION } from '../constants'
 
 type Setting = {
   theme: string;
   lang: string;
+  direction: string;
 }
 
 const defaultSettings: Setting = {
   theme: THEMES.LIGHT,
-  lang
+  direction: DIRECTION,
+  lang: DEFAULT_LANGUAGE
 }
 
 export const restoreSettings = () => {

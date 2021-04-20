@@ -18,7 +18,10 @@ const jss = create({ plugins: [...jssPreset().plugins, rtl()] })
 
 const App = () => {
   const { settings } = useSettings()
-  const theme = createTheme({ theme: settings.theme })
+  const theme = createTheme({
+    theme: settings.theme,
+    direction: settings.direction
+  })
 
   return (
     <I18nextProvider i18n={i18n}>
