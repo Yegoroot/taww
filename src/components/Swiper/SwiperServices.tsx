@@ -5,9 +5,9 @@ import { makeStyles } from '@material-ui/core'
 import 'swiper/swiper.min.css'
 import { KeyboardArrowRight } from '@material-ui/icons'
 import { useTranslation } from 'react-i18next'
-import {
-  HealthConditionCard, VacineCard,
-} from '../Services/Services'
+import { HealthConditionCard, VacineCard, HealthPassportCard } from '../Services/Services'
+import { Family2Card } from '../Services/Family2Card'
+import { MicroscopeCard } from '../Services/MicroscopeCard'
 
 export const slideStyle = (t: any) => ({
   width: '120px !important',
@@ -70,7 +70,15 @@ const SwiperServices = () => {
         <SwiperSlide className={classes.slide}>
           <HealthConditionCard />
         </SwiperSlide>
-
+        <SwiperSlide className={classes.slide}>
+          <Family2Card />
+        </SwiperSlide>
+        <SwiperSlide className={classes.slide}>
+          <MicroscopeCard />
+        </SwiperSlide>
+        <SwiperSlide className={classes.slide}>
+          <HealthPassportCard />
+        </SwiperSlide>
       </Swiper>
     </div>
   )
