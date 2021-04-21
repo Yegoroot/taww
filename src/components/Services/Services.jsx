@@ -1,11 +1,11 @@
 import React from 'react'
 import { makeStyles } from '@material-ui/core'
 import { useTranslation } from 'react-i18next'
-import HealthPassportIcon from '../icons/HealthPassport'
-import UserCard from '../icons/UserCard'
-import Family from '../icons/Family'
-import Microscope from '../icons/Microscope'
-import Vacine from '../icons/Vacine'
+import HealthPassportIcon from '../IconsSvg/HealthPassport'
+import UserCard from '../IconsSvg/UserCard'
+import Family from '../IconsSvg/Family'
+import Microscope from '../IconsSvg/Microscope'
+import Vacine from '../IconsSvg/Vacine'
 
 const useStyles = makeStyles((theme) => ({
   root: {},

@@ -1,7 +1,7 @@
 /* eslint-disable import/prefer-default-export */
 import React from 'react'
 import { useTranslation } from 'react-i18next'
-import src from '../../assets/images/IconsPng/family.png'
+import src from '../../assets/images/IconsImg/family.png'
 import { useStyles } from './stylePngIcon'
 
 export const Family2Card = () => {

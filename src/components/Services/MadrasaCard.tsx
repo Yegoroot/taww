@@ -1,7 +1,7 @@
 /* eslint-disable import/prefer-default-export */
 import React from 'react'
 import { useTranslation } from 'react-i18next'
-import src from '../../assets/images/IconsPng/madrasa.jpg'
+import src from '../../assets/images/IconsImg/madrasa.jpg'
 import { useStyles } from './stylePngIcon'
 
 export const MadrasaCard = () => {

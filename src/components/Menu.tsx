@@ -3,11 +3,11 @@ import { Button, Paper } from '@material-ui/core'
 import { NavLink } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { makeStyles } from '@material-ui/core/styles'
-import Dashboard from './icons/menu/Dashboard'
-import Profile from './icons/menu/Profile'
-import Wallet from './icons/menu/Wallet'
-import Grid from './icons/menu/Grid'
-import Home from './icons/menu/Home'
+import Dashboard from './IconsSvg/menu/Dashboard'
+import Profile from './IconsSvg/menu/Profile'
+import Wallet from './IconsSvg/menu/Wallet'
+import Grid from './IconsSvg/menu/Grid'
+import Home from './IconsSvg/menu/Home'
 
 const useStyles = makeStyles((theme) => ({
   menu: {
