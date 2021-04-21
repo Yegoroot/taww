@@ -78,7 +78,6 @@ const Form = () => {
         className={classes.input}
         id="numberIqama"
         onChange={onChange}
-        type="number"
         required
         label="Iqama's Number"
       />

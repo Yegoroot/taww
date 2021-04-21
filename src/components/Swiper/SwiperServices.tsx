@@ -10,7 +10,7 @@ import { Family2Card } from '../Services/Family2Card'
 import { MicroscopeCard } from '../Services/MicroscopeCard'
 
 export const slideStyle = (t: any) => ({
-  width: '120px !important',
+  width: '105px !important',
   height: 'auto !important',
   border: 'solid 1px #fff',
   padding: '10px 0px',
