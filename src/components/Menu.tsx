@@ -3,6 +3,7 @@ import { Button, Paper } from '@material-ui/core'
 import { NavLink } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { makeStyles } from '@material-ui/core/styles'
+import clsx from 'clsx'
 import Dashboard from './IconsSvg/menu/Dashboard'
 import Profile from './IconsSvg/menu/Profile'
 import Wallet from './IconsSvg/menu/Wallet'
@@ -33,7 +34,13 @@ const useStyles = makeStyles((theme) => ({
   },
   button: {
     fontWeight: 400,
-    color: theme.palette.text.secondary
+    color: theme.palette.text.secondary,
+    '& .docs': {
+      fontSize: 9
+    },
+    '& .dashb': {
+      fontSize: 10
+    },
   },
   title: {
     fontSize: 11,
@@ -49,26 +56,31 @@ const buttons = [
   {
     title: 'home',
     link: '/app/home',
+    class: '',
     icon: <Home />
   },
   {
     title: 'services',
     link: '/app/services',
+    class: '',
     icon: <Grid />
   },
   {
     title: 'documents',
     link: '/temp',
+    class: 'docs',
     icon: <Wallet />
   },
   {
     title: 'dashboard',
     link: '/temp',
+    class: 'dashb',
     icon: <Dashboard />
   },
   {
     title: 'profile',
     link: '/temp',
+    class: '',
     icon: <Profile />
   },
 ]
@@ -95,7 +107,7 @@ export default function Menu() {
             <span className={classes.svg}>
               {button.icon}
             </span>
-            <span className={classes.title}>
+            <span className={clsx(classes.title, button.class)}>
               {t(`menu.${button.title}`)}
             </span>
           </span>
