@@ -9,7 +9,7 @@ const useStyles = makeStyles((theme) => createStyles({
       padding: 0,
     },
     html: {
-      direction: DIRECTION,
+      direction: DIRECTION === 'rtl' ? 'ltr' : DIRECTION,
       '-webkit-font-smoothing': 'antialiased',
       '-moz-osx-font-smoothing': 'grayscale',
       // [theme.breakpoints.up('md')]: {
