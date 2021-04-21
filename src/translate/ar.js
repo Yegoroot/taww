@@ -9,47 +9,40 @@ export default {
       displayAll: 'عرض الكل'
     },
     sPage: {
-      publicS: 'Public services',
-      permitS: 'Permit services',
-      healthS: 'Health services',
-      educationS: 'Education services',
-      dependentsS: 'Dependents services',
-      hajjS: 'Hajj and Umrah services',
+      publicS: 'الخدمات العامة',
+      permitS: 'خدمات التصاريح',
+      healthS: 'خدمات الصحة',
+      educationS: 'خدمات التعليم',
+      dependentsS: 'خدمات التابعين',
+      hajjS: 'خدمات الحج والعمرة',
     },
     card: {
       // INFO public
-      family2: 'Certify Mobile Number',
+      family2: 'تعريف رقم الجوال',
       // INFO permit
-      plus: 'Request New Permit',
-      time: 'Personal Permits',
-      people: 'Gathering Permits',
+      plus: 'طلب تصريح جديد',
+      time: 'التصاريح الشخصية',
+      people: 'تصاريح التجمع',
       // INFO health
-      warning: 'Caution Mode',
-      microscope: 'COVID-19 Test',
-      question: 'Ask for Help',
-      passport: 'Health Passport',
-      vaccine: 'COVID-19 Vaccine',
+      warning: 'الوضع الحذر',
+      microscope: 'فحص كورونا',
+      question: 'اسأل عن مساعدة',
+      passport: 'الجواز الصحي',
+      vaccine: 'لقاح كورونا',
       // INFO education
-      certificate: "Children's Education Status",
-      madrasa: 'Madrasati Platform',
+      certificate: 'الحالة الدراسية للأبناء',
+      madrasa: 'بيانات منصة مدرستي',
       // INFO dependents
-      cCard: 'Health Condition Card',
-      people3: 'Checking up with Dependents',
-      family: 'Family and Sponsored Members',
+      cCard: 'بطاقة الوضع الصحي',
+      people3: 'رعاية التابعين',
+      family: 'أفراد الأسرة والمكفولين',
       // INFO Hajj
-      permits: 'Permits',
-      issuepermits: 'Issue Permits',
-      people2: 'Manage Beneficiaries',
+      permits: 'التصاريح',
+      issuepermits: 'إصدار التصاريح',
+      people2: 'إدارة المستفيدين',
       // INFO no use now
       // test: 'COVID-19 Test',
       // cirtifyNumber: 'Certify Mobile Number'
-
-      // vaccine: 'لقاح كورونا',
-      // cCard: 'بطاقة الوضع الصحي',
-      // test: 'فحص كورونا',
-      // passport: 'الجواز الصحي',
-      // family: 'أفراد الأسرة والمكفولين',
-      // cirtifyNumber: 'تعريف رقم الجوال'
     },
     tabaut: {
       title: 'تحذير',
