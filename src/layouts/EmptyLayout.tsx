@@ -3,10 +3,10 @@ import { makeStyles } from '@material-ui/core'
 
 const useStyles = makeStyles(() => ({
   root: {
-    height: '100%',
-    backgroundSize: '60%',
-    backgroundRepeat: 'no-repeat',
-    backgroundPosition: '100% 90%',
+    // height: '100%',
+    // backgroundSize: '60%',
+    // backgroundRepeat: 'no-repeat',
+    // backgroundPosition: '100% 90%',
     padding: 20
   }
 }))

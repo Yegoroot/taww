@@ -1,4 +1,5 @@
 import { createStyles, makeStyles } from '@material-ui/core'
+import { DIRECTION } from '../constants'
 
 const useStyles = makeStyles((theme) => createStyles({
   '@global': {
@@ -8,7 +9,7 @@ const useStyles = makeStyles((theme) => createStyles({
       padding: 0,
     },
     html: {
-      direction: 'ltr',
+      direction: DIRECTION,
       '-webkit-font-smoothing': 'antialiased',
       '-moz-osx-font-smoothing': 'grayscale',
       // [theme.breakpoints.up('md')]: {

@@ -6,7 +6,7 @@ import 'swiper/swiper.min.css'
 import { KeyboardArrowRight } from '@material-ui/icons'
 import { useTranslation } from 'react-i18next'
 import {
-  HealthConditionCard, MicroscopeCard, VacineCard, CertifyNumberCard
+  HealthConditionCard, VacineCard,
 } from '../Services/Services'
 
 export const slideStyle = (t: any) => ({
@@ -69,12 +69,6 @@ const SwiperServices = () => {
         </SwiperSlide>
         <SwiperSlide className={classes.slide}>
           <HealthConditionCard />
-        </SwiperSlide>
-        <SwiperSlide className={classes.slide}>
-          <CertifyNumberCard />
-        </SwiperSlide>
-        <SwiperSlide className={classes.slide}>
-          <MicroscopeCard />
         </SwiperSlide>
 
       </Swiper>

@@ -1,5 +1,6 @@
 import React from 'react'
 import { makeStyles } from '@material-ui/core'
+import { useTranslation } from 'react-i18next'
 
 import { HealthPassportCard, HealthConditionCard, /* FamilyCard */ } from '../components/Services/Services'
 import { CertificateCard } from '../components/Services/CertificateCard'
@@ -43,70 +44,96 @@ const useStyles = makeStyles((theme) => ({
 
 const Services = () => {
   const classes = useStyles()
+  const { t } = useTranslation()
   return (
     <div className={classes.root}>
       <div className={classes.block}>
         <span className={classes.titleBlock}>
-          Health Services
+          {t('sPage.publicS')}
         </span>
+        <div className={classes.slide}>
+          <Family2Card />
+        </div>
+      </div>
 
-        <div className={classes.slide}>
-          <CertificateCard />
-        </div>
-        <div className={classes.slide}>
-          <IssuePermitsCard />
-        </div>
-        <div className={classes.slide}>
-          <MicroscopeCard />
-        </div>
-        <div className={classes.slide}>
-          <PeopleCard />
-        </div>
-        <div className={classes.slide}>
-          <People2Card />
-        </div>
-        <div className={classes.slide}>
-          <People3Card />
-        </div>
-        <div className={classes.slide}>
-          <PermitsCard />
-        </div>
+      <div className={classes.block}>
+        <span className={classes.titleBlock}>
+          {t('sPage.permitS')}
+        </span>
         <div className={classes.slide}>
           <PlusCard />
-        </div>
-        <div className={classes.slide}>
-          <QuestionCard />
         </div>
         <div className={classes.slide}>
           <TimeCard />
         </div>
         <div className={classes.slide}>
-          <VaccineCard />
+          <PeopleCard />
         </div>
+      </div>
+
+      <div className={classes.block}>
+        <span className={classes.titleBlock}>
+          {t('sPage.healthS')}
+        </span>
         <div className={classes.slide}>
           <WarningCard />
         </div>
         <div className={classes.slide}>
-          <Family2Card />
+          <MicroscopeCard />
+        </div>
+        <div className={classes.slide}>
+          <QuestionCard />
+        </div>
+        <div className={classes.slide}>
+          <HealthPassportCard />
+        </div>
+        <div className={classes.slide}>
+          <VaccineCard />
+        </div>
+      </div>
+
+      <div className={classes.block}>
+        <span className={classes.titleBlock}>
+          {t('sPage.educationS')}
+        </span>
+        <div className={classes.slide}>
+          <CertificateCard />
         </div>
         <div className={classes.slide}>
           <MadrasaCard />
         </div>
       </div>
+
       <div className={classes.block}>
         <span className={classes.titleBlock}>
-          Dependents Services
+          {t('sPage.dependentsS')}
         </span>
         <div className={classes.slide}>
-          <HealthPassportCard />
+          <HealthConditionCard />
         </div>
         <div className={classes.slide}>
-          <HealthConditionCard />
+          <People3Card />
         </div>
         <div className={classes.slide}>
           <FamilyCard />
         </div>
       </div>
+
+      <div className={classes.block}>
+        <span className={classes.titleBlock}>
+          {t('sPage.hajjS')}
+        </span>
+        <div className={classes.slide}>
+          <PermitsCard />
+        </div>
+        <div className={classes.slide}>
+          <IssuePermitsCard />
+        </div>
+        <div className={classes.slide}>
+          <People2Card />
+        </div>
+      </div>
+
     </div>
   )
 }

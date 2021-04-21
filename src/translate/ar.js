@@ -8,13 +8,48 @@ export default {
       newServices: 'الخادمات الحديثة',
       displayAll: 'عرض الكل'
     },
+    sPage: {
+      publicS: 'Public services',
+      permitS: 'Permit services',
+      healthS: 'Health services',
+      educationS: 'Education services',
+      dependentsS: 'Dependents services',
+      hajjS: 'Hajj and Umrah services',
+    },
     card: {
-      vaccine: 'لقاح كورونا',
-      cCard: 'بطاقة الوضع الصحي',
-      test: 'فحص كورونا',
-      passport: 'الجواز الصحي',
-      family: 'أفراد الأسرة والمكفولين',
-      cirtifyNumber: 'تعريف رقم الجوال'
+      // INFO public
+      family2: 'Certify Mobile Number',
+      // INFO permit
+      plus: 'Request New Permit',
+      time: 'Personal Permits',
+      people: 'Gathering Permits',
+      // INFO health
+      warning: 'Caution Mode',
+      microscope: 'COVID-19 Test',
+      question: 'Ask for Help',
+      passport: 'Health Passport',
+      vaccine: 'COVID-19 Vaccine',
+      // INFO education
+      certificate: "Children's Education Status",
+      madrasa: 'Madrasati Platform',
+      // INFO dependents
+      cCard: 'Health Condition Card',
+      people3: 'Checking up with Dependents',
+      family: 'Family and Sponsored Members',
+      // INFO Hajj
+      permits: 'Permits',
+      issuepermits: 'Issue Permits',
+      people2: 'Manage Beneficiaries',
+      // INFO no use now
+      // test: 'COVID-19 Test',
+      // cirtifyNumber: 'Certify Mobile Number'
+
+      // vaccine: 'لقاح كورونا',
+      // cCard: 'بطاقة الوضع الصحي',
+      // test: 'فحص كورونا',
+      // passport: 'الجواز الصحي',
+      // family: 'أفراد الأسرة والمكفولين',
+      // cirtifyNumber: 'تعريف رقم الجوال'
     },
     tabaut: {
       title: 'تحذير',

@@ -17,27 +17,32 @@ export default {
       hajjS: 'Hajj and Umrah services',
     },
     card: {
-      // png
+      // INFO public
       family2: 'Certify Mobile Number',
-      certificate: "Children's Education Status",
+      // INFO permit
       plus: 'Request New Permit',
       time: 'Personal Permits',
       people: 'Gathering Permits',
-      people2: 'Manage Beneficiaries',
-      people3: 'Checking up with Dependents',
+      // INFO health
       warning: 'Caution Mode',
       microscope: 'COVID-19 Test',
       question: 'Ask for Help',
+      passport: 'Health Passport',
+      vaccine: 'COVID-19 Vaccine',
+      // INFO education
+      certificate: "Children's Education Status",
       madrasa: 'Madrasati Platform',
+      // INFO dependents
+      cCard: 'Health Condition Card',
+      people3: 'Checking up with Dependents',
+      family: 'Family and Sponsored Members',
+      // INFO Hajj
       permits: 'Permits',
       issuepermits: 'Issue Permits',
-      // svg
-      vaccine: 'COVID-19 Vaccine',
-      cCard: 'Health Condition Card',
-      test: 'COVID-19 Test',
-      passport: 'Health Passport',
-      family: 'Family and Sponsored Members',
-      cirtifyNumber: 'Certify Mobile Number'
+      people2: 'Manage Beneficiaries',
+      // INFO no use now
+      // test: 'COVID-19 Test',
+      // cirtifyNumber: 'Certify Mobile Number'
     },
     tabaut: {
       title: 'Warning',

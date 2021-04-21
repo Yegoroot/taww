@@ -7,13 +7,8 @@ import Menu from '../components/Menu'
 const useStyles = makeStyles((theme: ThemeOptions) => ({
   root: {
     backgroundColor: theme.palette.background.dark,
-    height: '100%',
-    backgroundSize: '60%',
-    backgroundRepeat: 'no-repeat',
-    backgroundPosition: '100% calc(100% - 70px)',
   },
   wrapper: {
-    paddingBottom: 70,
     overflow: 'auto'
   }
 }))
