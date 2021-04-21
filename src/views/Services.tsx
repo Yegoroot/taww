@@ -15,6 +15,8 @@ import { QuestionCard } from '../components/Services/QuestionCard'
 import { TimeCard } from '../components/Services/TimeCard'
 import { VaccineCard } from '../components/Services/VaccineCard'
 import { WarningCard } from '../components/Services/WarningCard'
+import { Family2Card } from '../components/Services/Family2Card'
+import { MadrasaCard } from '../components/Services/MadrasaCard'
 
 import { slideStyle } from '../components/Swiper/SwiperServices'
 
@@ -83,6 +85,12 @@ const Services = () => {
         </div>
         <div className={classes.slide}>
           <WarningCard />
+        </div>
+        <div className={classes.slide}>
+          <Family2Card />
+        </div>
+        <div className={classes.slide}>
+          <MadrasaCard />
         </div>
       </div>
       <div className={classes.block}>

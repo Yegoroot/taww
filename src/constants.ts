@@ -1,6 +1,6 @@
 // export const ENABLE_REDUX_DEV_TOOLS = true
 export const DEBUG_I18 = true
-export const DEFAULT_LANGUAGE = 'ar'
+export const DEFAULT_LANGUAGE = 'en'
 export const DIRECTION = 'rtl' // так же поменяй в GlobalStyle
 export const DOMAIN = 'http://localhost:3000/'
 
