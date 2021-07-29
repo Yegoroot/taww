@@ -6,6 +6,7 @@ import UserCard from '../IconsSvg/UserCard'
 import Family from '../IconsSvg/Family'
 // import Microscope from '../IconsSvg/Microscope'
 import Vacine from '../IconsSvg/Vacine'
+import HandHeart from '../IconsSvg/HandHeart'
 
 const useStyles = makeStyles((theme) => ({
   root: {},
@@ -104,6 +105,20 @@ export const VacineCard = () => {
       <Vacine />
       <span className={classes.slideTitle}>
         {t('card.vaccine')}
+      </span>
+    </div>
+  )
+}
+
+export const HandHeartCard = () => {
+  const classes = useStyles()
+  const { t } = useTranslation()
+  return (
+
+    <div className={classes.wrapSlide}>
+      <HandHeart />
+      <span className={classes.slideTitle}>
+        {t('card.handheart')}
       </span>
     </div>
   )

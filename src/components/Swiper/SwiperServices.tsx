@@ -5,7 +5,9 @@ import { makeStyles } from '@material-ui/core'
 import 'swiper/swiper.min.css'
 import { KeyboardArrowRight } from '@material-ui/icons'
 import { useTranslation } from 'react-i18next'
-import { HealthConditionCard, VacineCard, HealthPassportCard } from '../Services/Services'
+import {
+  HealthConditionCard, VacineCard, HealthPassportCard, HandHeartCard
+} from '../Services/Services'
 import { Family2Card } from '../Services/Family2Card'
 import { MicroscopeCard } from '../Services/MicroscopeCard'
 
@@ -65,20 +67,24 @@ const SwiperServices = () => {
         slidesPerView="auto"
       >
         <SwiperSlide className={classes.slide}>
-          <VacineCard />
+          <HandHeartCard />
         </SwiperSlide>
         <SwiperSlide className={classes.slide}>
-          <HealthConditionCard />
+          <HealthPassportCard />
+        </SwiperSlide>
+        <SwiperSlide className={classes.slide}>
+          <VacineCard />
         </SwiperSlide>
         <SwiperSlide className={classes.slide}>
           <Family2Card />
         </SwiperSlide>
         <SwiperSlide className={classes.slide}>
-          <MicroscopeCard />
+          <HealthConditionCard />
         </SwiperSlide>
         <SwiperSlide className={classes.slide}>
-          <HealthPassportCard />
+          <MicroscopeCard />
         </SwiperSlide>
+
       </Swiper>
     </div>
   )

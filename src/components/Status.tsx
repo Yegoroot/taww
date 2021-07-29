@@ -49,21 +49,25 @@ const useStyles = makeStyles((theme) => ({
     // fontSize: 11,
     display: 'flex',
     flexDirection: 'column',
-    alignSelf: 'center',
+    alignSelf: 'normal',
     fontSize: 11,
     flex: 1,
     padding: '7px 10px 7px 0px',
     alignItems: 'stretch',
+    justifyContent: 'space-between'
   },
   infoTitle: {
     fontSize: 15,
     marginBottom: 5,
     fontWeight: 'bold'
   },
+  infoDesc: {
+    // width: 20
+  },
   updateButton: {
     marginTop: 10,
     marginRight: theme.spacing(1.6),
-    // alignSelf: 'center',
+    alignSelf: 'center',
     width: 18,
   },
 
@@ -95,6 +99,7 @@ export default function Status({ user }: {user: UserType}) {
       {loading && <LoadingScreen className={classes.loading} />}
       <div className={classes.info}>
         <span className={classes.infoTitle}>{t('status.info')}</span>
+        <span className={classes.infoDesc}>{t('status.desc')}</span>
         <span>
           {t('status.lastUpdate')}
           {' '}

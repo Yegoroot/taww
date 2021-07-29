@@ -1,7 +1,8 @@
 export default {
   translations: {
     status: {
-      info: 'محصّن جرعة أولى',
+      info: 'محصّن',
+      desc: 'أكمل جرعات لقاح كورونا (كوفيد-19)',
       lastUpdate: 'آخر تحديث'
     },
     home: {
@@ -17,6 +18,7 @@ export default {
       hajjS: 'خدمات الحج والعمرة',
     },
     card: {
+      handheart: 'التبرع بالأعضاء',
       // INFO public
       family2: 'تعريف رقم الجوال',
       // INFO permit
