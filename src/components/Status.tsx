@@ -48,11 +48,11 @@ const useStyles = makeStyles((theme) => ({
   },
   info: {
     // fontSize: 11,
-    marginLeft: 10,
+    marginLeft: 5,
     display: 'flex',
     flexDirection: 'column',
     alignSelf: 'normal',
-    fontSize: 12,
+    fontSize: 11,
     flex: 1,
     padding: '12px 10px 12px 0px',
     alignItems: 'stretch',
