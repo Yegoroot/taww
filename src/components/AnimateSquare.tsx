@@ -23,10 +23,20 @@ const AnimateSquare = ({ children, width, border = 3 }: Props) => {
       direction: 'rtl',
       margin: 10,
       display: 'flex',
-      '& > .box1': {
+      '& > .box0': {
         position: 'absolute',
         top: 0,
         right: 0,
+        width: 0,
+        height: border,
+        display: 'none',
+        // @ts-ignore
+        backgroundColor: theme.palette.background.dark
+      },
+      '& > .box1': {
+        position: 'absolute',
+        top: 0,
+        right: `calc(${width / 2}px - ${border}px)`,
         width: 0,
         height: border,
         display: 'none',
@@ -82,7 +92,7 @@ const AnimateSquare = ({ children, width, border = 3 }: Props) => {
     tl.current = gsap.timeline({ repeat: -1 })
       .to(q('.box1'), {
         display: 'block',
-        width: SIDE_WIDTH
+        width: SIDE_WIDTH / 2
       })
       .to(q('.box2'), {
         display: 'block',
@@ -97,6 +107,10 @@ const AnimateSquare = ({ children, width, border = 3 }: Props) => {
         display: 'block',
         height: SIDE_WIDTH
       })
+      .to(q('.box0'), {
+        display: 'block',
+        width: SIDE_WIDTH / 2
+      })
   })
 
   return (
@@ -106,6 +120,7 @@ const AnimateSquare = ({ children, width, border = 3 }: Props) => {
       ref={el}
     >
       <div className={classes.child}>{children}</div>
+      <div className="box0" />
       <div className="box1" />
       <div className="box2" />
       <div className="box3" />
