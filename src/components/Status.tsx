@@ -8,7 +8,8 @@ import { UserType } from '../constants'
 import Update from './IconsSvg/Update'
 import 'moment/locale/ar'
 import useSettings from '../hooks/useSettings'
-import LoadingScreen from './LoadingScreen'
+// import LoadingScreen from './LoadingScreen'
+import AnimateSquare from './AnimateSquare'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -31,7 +32,7 @@ const useStyles = makeStyles((theme) => ({
     transform: 'translate(50%, -50%)'
   },
   qrcode: {
-    padding: 10,
+    padding: 3,
     height: 'initial',
     width: '25%',
     minWidth: 80,
@@ -47,12 +48,13 @@ const useStyles = makeStyles((theme) => ({
   },
   info: {
     // fontSize: 11,
+    marginLeft: 10,
     display: 'flex',
     flexDirection: 'column',
     alignSelf: 'normal',
-    fontSize: 11,
+    fontSize: 12,
     flex: 1,
-    padding: '7px 10px 7px 0px',
+    padding: '12px 10px 12px 0px',
     alignItems: 'stretch',
     justifyContent: 'space-between'
   },
@@ -90,13 +92,19 @@ export default function Status({ user }: {user: UserType}) {
     }, 1000)
   }
   return (
+
     <div className={classes.root}>
-      <QRCode
-        value={`${numberIqama}`}
-        renderAs="svg"
-        className={clsx({ [classes.qrcode]: true, [classes.qrcodeHidden]: loading })}
-      />
-      {loading && <LoadingScreen className={classes.loading} />}
+      <AnimateSquare
+        width={90}
+        border={3}
+      >
+        <QRCode
+          value={`${numberIqama}`}
+          renderAs="svg"
+          className={clsx({ [classes.qrcode]: true, [classes.qrcodeHidden]: loading })}
+        />
+      </AnimateSquare>
+      {/* {loading && <LoadingScreen className={classes.loading} />} */}
       <div className={classes.info}>
         <span className={classes.infoTitle}>{t('status.info')}</span>
         <span className={classes.infoDesc}>{t('status.desc')}</span>
@@ -111,5 +119,6 @@ export default function Status({ user }: {user: UserType}) {
         onClick={onUpdate}
       />
     </div>
+
   )
 }
