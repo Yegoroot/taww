@@ -82,14 +82,14 @@ export default function Status({ user }: {user: UserType}) {
   moment.locale(settings.lang)
 
   const [date, setDate] = useState(moment.now())
-  const [loading, setLoading] = useState(false)
+  // const [loading, setLoading] = useState(false)
 
   const onUpdate = () => {
-    setLoading(true)
-    setTimeout(() => {
-      setLoading(false)
-      setDate(moment.now())
-    }, 1000)
+    // setLoading(true)
+    // setTimeout(() => {
+    // setLoading(false)
+    setDate(moment.now())
+    // }, 1000)
   }
   return (
 
@@ -101,7 +101,7 @@ export default function Status({ user }: {user: UserType}) {
         <QRCode
           value={`${numberIqama}`}
           renderAs="svg"
-          className={clsx({ [classes.qrcode]: true, [classes.qrcodeHidden]: loading })}
+          className={clsx({ [classes.qrcode]: true, /* [classes.qrcodeHidden]: loading */ })}
         />
       </AnimateSquare>
       {/* {loading && <LoadingScreen className={classes.loading} />} */}

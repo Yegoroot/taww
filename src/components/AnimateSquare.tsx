@@ -111,7 +111,7 @@ const AnimateSquare = ({ children, width, border = 3 }: Props) => {
         display: 'block',
         width: SIDE_WIDTH / 2
       })
-  })
+  }, [])
 
   return (
     <div
