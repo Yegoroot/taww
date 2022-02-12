@@ -15,11 +15,12 @@ const useStyles = makeStyles((theme) => createStyles({
       // [theme.breakpoints.up('md')]: {
       // },
       height: '100%',
-      width: '100%'
+      width: '100%',
     },
     body: {
       fontSize: '1rem',
-      fontFamily: '"Droid Arabic Naskh", "Roboto", sans-serif',
+      // fontFamily: '"Droid Arabic Naskh", "Roboto", sans-serif',
+      fontFamily: 'Cairo, Roboto, sans-serif',
       height: '100%',
       width: '100%',
       lineHeight: 1.5,
@@ -34,7 +35,7 @@ const useStyles = makeStyles((theme) => createStyles({
     },
     '#root': {
       height: '100%',
-      width: '100%'
+      width: '100%',
     },
     // menu
     a: {
@@ -44,8 +45,7 @@ const useStyles = makeStyles((theme) => createStyles({
         color: theme.palette.primary.main,
       },
     },
-  }
-
+  },
 }))
 
 const GlobalStyles = () => {

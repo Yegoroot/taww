@@ -42,7 +42,8 @@ export default {
     fontWeight: 500,
   },
   fontFamily: [
-    '"Droid Arabic Naskh"',
+    '"Cairo"',
+    // '"Droid Arabic Naskh"',
     '"Roboto"',
     '"Helvetica"',
     '-apple-system',

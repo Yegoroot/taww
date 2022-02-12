@@ -42,15 +42,17 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 16
   },
   userPhoto: {
-
     borderRadius: '50%',
-    border: 'solid 2px red',
-    borderColor: theme.palette.primary.main,
-    width: 60,
-    height: 60,
-    padding: 2
-    // padding: theme.spacing(0.5)
-
+    border: `solid 3px ${theme.palette.primary.main}`,
+    width: '23%',
+    margin: 'auto',
+    overflow: 'hidden', /* clearfix */
+    backgroundSize: 'cover',
+    '&::before': {
+      content: '""',
+      paddingTop: '100%',
+      float: 'right'
+    }
   },
   name: {
     fontSize: 20,
@@ -94,11 +96,16 @@ export const SlidePhoto = ({ user }: {user: UserType}) => {
       />
       <div className={classes.user}>
 
-        <img
+        <div
           className={classes.userPhoto}
-          src={src}
-          alt=""
-        />
+          style={{ backgroundImage: `URL(${src})` }}
+        >
+          {/*
+          <img
+            src={src}
+            alt=""
+          /> */}
+        </div>
 
         <span className={classes.name}>{name}</span>
         <span className={classes.numberIqama}>{numberIqama}</span>
