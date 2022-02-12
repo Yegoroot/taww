@@ -5,12 +5,11 @@ import clsx from 'clsx'
 import { UserType } from '../../constants'
 import useSettings from '../../hooks/useSettings'
 import Iqama from '../../assets/images/norm.png'
-// import { PhotoModal } from '../modals/Photo'
+import { PhotoModal } from '../modals/Photo'
 
 const useStyles = makeStyles((theme) => ({
   image: {
     width: '100%',
-    // boxShadow: theme.shadows[1],
     borderRadius: 10
   },
   photoBlock: {
@@ -98,11 +97,11 @@ export const SlidePhoto = ({ user }: {user: UserType}) => {
       />
       <div className={classes.user}>
 
-        <div
-          className={classes.userPhoto}
-          style={{ backgroundImage: `URL(${src})` }}
+        <PhotoModal
+          src={src}
+          name={name}
+          numberIqama={numberIqama}
         />
-        {/* <PhotoModal /> */}
 
         <span className={classes.name}>{name}</span>
         <span className={classes.numberIqama}>{numberIqama}</span>

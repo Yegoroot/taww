@@ -10,8 +10,8 @@ export const THEMES = {
 }
 
 export type UserType = {
-  name: String,
-  numberIqama: number,
+  name: string,
+  numberIqama: string,
   photo: string,
   photoIqama: string,
 }

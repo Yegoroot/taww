@@ -1,7 +1,7 @@
 import _ from 'lodash'
 import {
   colors,
-  createMuiTheme,
+  createTheme as createMuiTheme,
 } from '@material-ui/core'
 import { THEMES, DIRECTION } from '../constants'
 import { softShadows, strongShadows } from './shadows'
@@ -126,7 +126,6 @@ const defaultP = {
   theme: 'light'
 }
 
-// eslint-disable-next-line import/prefer-default-export
 export const createTheme = (config: Theme = defaultP) => {
   let themeOptions = themesOptions.find((theme) => theme.name === config.theme)
 
