@@ -6,11 +6,16 @@ import 'swiper/swiper.min.css'
 import { KeyboardArrowRight } from '@material-ui/icons'
 import { useTranslation } from 'react-i18next'
 import {
-  HealthConditionCard, VacineCard, HealthPassportCard
+  HealthConditionCard, HealthPassportCard
 } from '../Services/Services'
 
 import { MicroscopeCard } from '../Services/MicroscopeCard'
-import { PermitsUmra, QRCode, Skoraya } from '../Services'
+import { Card } from '../Services/Card'
+
+import permitsUmraSrc from '../../assets/images/IconsImg/permitsUmra.svg'
+import skoroyaSrc from '../../assets/images/IconsImg/skoraya.svg'
+import qrcodeSrc from '../../assets/images/IconsImg/qrcode.svg'
+import vaccineSrc from '../../assets/images/IconsImg/vaccine.png'
 
 export const slideStyle = (t: any) => ({
   width: '105px !important',
@@ -68,19 +73,32 @@ const SwiperServices = () => {
         slidesPerView="auto"
       >
         <SwiperSlide className={classes.slide}>
-          <PermitsUmra />
+          <Card
+            src={permitsUmraSrc}
+            text={t('card.permitsUmra')}
+          />
         </SwiperSlide>
         <SwiperSlide className={classes.slide}>
-          <Skoraya />
+          <Card
+            src={skoroyaSrc}
+            text={t('card.skoraya')}
+          />
         </SwiperSlide>
         <SwiperSlide className={classes.slide}>
-          <QRCode />
+          <Card
+            src={qrcodeSrc}
+            text={t('card.qrcode')}
+          />
         </SwiperSlide>
+
         <SwiperSlide className={classes.slide}>
           <HealthPassportCard />
         </SwiperSlide>
         <SwiperSlide className={classes.slide}>
-          <VacineCard />
+          <Card
+            src={vaccineSrc}
+            text={t('card.vaccine')}
+          />
         </SwiperSlide>
         <SwiperSlide className={classes.slide}>
           <HealthConditionCard />

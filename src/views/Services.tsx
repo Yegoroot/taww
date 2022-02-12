@@ -14,12 +14,14 @@ import { PermitsCard } from '../components/Services/PermitsCard'
 import { PlusCard } from '../components/Services/PlusCard'
 import { QuestionCard } from '../components/Services/QuestionCard'
 import { TimeCard } from '../components/Services/TimeCard'
-import { VaccineCard } from '../components/Services/VaccineCard'
+import { Card } from '../components/Services/Card'
 import { WarningCard } from '../components/Services/WarningCard'
 import { Family2Card } from '../components/Services/Family2Card'
 import { MadrasaCard } from '../components/Services/MadrasaCard'
 
 import { slideStyle } from '../components/Swiper/SwiperServices'
+
+import vaccineSrc from '../assets/images/IconsImg/vaccine.png'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -88,7 +90,10 @@ const Services = () => {
           <HealthPassportCard />
         </div>
         <div className={classes.slide}>
-          <VaccineCard />
+          <Card
+            src={vaccineSrc}
+            text={t('card.vaccine')}
+          />
         </div>
       </div>
 

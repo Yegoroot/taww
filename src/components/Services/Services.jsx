@@ -4,8 +4,6 @@ import { useTranslation } from 'react-i18next'
 import HealthPassportIcon from '../IconsSvg/HealthPassport'
 import UserCard from '../IconsSvg/UserCard'
 import Family from '../IconsSvg/Family'
-// import Microscope from '../IconsSvg/Microscope'
-import Vacine from '../IconsSvg/Vacine'
 import HandHeart from '../IconsSvg/HandHeart'
 
 const useStyles = makeStyles((theme) => ({
@@ -65,46 +63,6 @@ export const FamilyCard = () => {
       <Family />
       <span className={classes.slideTitle}>
         {t('card.family')}
-      </span>
-    </div>
-  )
-}
-// export const CertifyNumberCard = () => {
-//   const classes = useStyles()
-//   const { t } = useTranslation()
-//   return (
-
-//     <div className={classes.wrapSlide}>
-//       <Family />
-//       <span className={classes.slideTitle}>
-//         {t('card.cirtifyNumber')}
-//       </span>
-//     </div>
-//   )
-// }
-// export const MicroscopeCard = () => {
-//   const classes = useStyles()
-//   const { t } = useTranslation()
-//   return (
-
-//     <div className={classes.wrapSlide}>
-//       <Microscope />
-//       <span className={classes.slideTitle}>
-//         {t('card.test')}
-//       </span>
-//     </div>
-//   )
-// }
-
-export const VacineCard = () => {
-  const classes = useStyles()
-  const { t } = useTranslation()
-  return (
-
-    <div className={classes.wrapSlide}>
-      <Vacine />
-      <span className={classes.slideTitle}>
-        {t('card.vaccine')}
       </span>
     </div>
   )

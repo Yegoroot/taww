@@ -1,11 +1,13 @@
 import React from 'react'
-import { useTranslation } from 'react-i18next'
-import src from '../../assets/images/IconsImg/permitsUmra.svg'
 import { useStyles } from './stylePngIcon'
 
-export const PermitsUmra = () => {
+interface Props {
+  src: any;
+  text: string
+}
+
+export const Card = ({ src, text }: Props) => {
   const classes = useStyles()
-  const { t } = useTranslation()
   return (
     <div className={classes.wrapSlide}>
       <img
@@ -14,7 +16,7 @@ export const PermitsUmra = () => {
         className={classes.img}
       />
       <span className={classes.slideTitle}>
-        {t('card.permitsUmra')}
+        {text}
       </span>
     </div>
   )

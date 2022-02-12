@@ -45,8 +45,8 @@ const useStyles = makeStyles((theme) => ({
   },
   userPhoto: {
     borderRadius: '50%',
-    border: `solid 3px ${theme.palette.primary.main}`,
-    width: '23%',
+    border: `solid 4px ${theme.palette.primary.main}`,
+    width: '26%',
     margin: 'auto',
     overflow: 'hidden', /* clearfix */
     backgroundSize: 'cover',
