@@ -6,10 +6,11 @@ import 'swiper/swiper.min.css'
 import { KeyboardArrowRight } from '@material-ui/icons'
 import { useTranslation } from 'react-i18next'
 import {
-  HealthConditionCard, VacineCard, HealthPassportCard, HandHeartCard
+  HealthConditionCard, VacineCard, HealthPassportCard
 } from '../Services/Services'
-import { Family2Card } from '../Services/Family2Card'
+
 import { MicroscopeCard } from '../Services/MicroscopeCard'
+import { PermitsUmra, QRCode, Skoraya } from '../Services'
 
 export const slideStyle = (t: any) => ({
   width: '105px !important',
@@ -67,16 +68,19 @@ const SwiperServices = () => {
         slidesPerView="auto"
       >
         <SwiperSlide className={classes.slide}>
-          <HandHeartCard />
+          <PermitsUmra />
+        </SwiperSlide>
+        <SwiperSlide className={classes.slide}>
+          <Skoraya />
+        </SwiperSlide>
+        <SwiperSlide className={classes.slide}>
+          <QRCode />
         </SwiperSlide>
         <SwiperSlide className={classes.slide}>
           <HealthPassportCard />
         </SwiperSlide>
         <SwiperSlide className={classes.slide}>
           <VacineCard />
-        </SwiperSlide>
-        <SwiperSlide className={classes.slide}>
-          <Family2Card />
         </SwiperSlide>
         <SwiperSlide className={classes.slide}>
           <HealthConditionCard />

@@ -25,7 +25,13 @@
     }
   },
   "rules": {
-    "import/no-extraneous-dependencies": ["error", {"devDependencies": true}],
+    "import/prefer-default-export": "off",
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": true
+      }
+    ],
     "import/extensions": [
       "error",
       "ignorePackages",
@@ -35,7 +41,7 @@
         "ts": "never",
         "tsx": "never"
       }
-   ],
+    ],
     "react/jsx-max-props-per-line": [
       1,
       {

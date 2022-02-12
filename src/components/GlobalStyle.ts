@@ -18,6 +18,9 @@ const useStyles = makeStyles((theme) => createStyles({
       width: '100%',
     },
     body: {
+      iframe: {
+        display: 'none'
+      },
       fontSize: '1rem',
       // fontFamily: '"Droid Arabic Naskh", "Roboto", sans-serif',
       fontFamily: 'Cairo, Roboto, sans-serif',

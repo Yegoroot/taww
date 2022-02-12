@@ -1,9 +1,11 @@
 import React from 'react'
 import { makeStyles } from '@material-ui/core'
+// @ts-ignore
 import clsx from 'clsx'
 import { UserType } from '../../constants'
 import useSettings from '../../hooks/useSettings'
 import Iqama from '../../assets/images/norm.png'
+// import { PhotoModal } from '../modals/Photo'
 
 const useStyles = makeStyles((theme) => ({
   image: {
@@ -99,13 +101,8 @@ export const SlidePhoto = ({ user }: {user: UserType}) => {
         <div
           className={classes.userPhoto}
           style={{ backgroundImage: `URL(${src})` }}
-        >
-          {/*
-          <img
-            src={src}
-            alt=""
-          /> */}
-        </div>
+        />
+        {/* <PhotoModal /> */}
 
         <span className={classes.name}>{name}</span>
         <span className={classes.numberIqama}>{numberIqama}</span>

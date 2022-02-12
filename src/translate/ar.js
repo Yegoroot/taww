@@ -6,7 +6,8 @@ export default {
       lastUpdate: 'آخر تحديث'
     },
     home: {
-      newServices: 'الخادمات الحديثة',
+      // newServices: 'الخادمات الحديثة',
+      newServices: 'أبرز الخدمات',
       displayAll: 'عرض الكل'
     },
     sPage: {
@@ -45,6 +46,9 @@ export default {
       // INFO no use now
       // test: 'COVID-19 Test',
       // cirtifyNumber: 'Certify Mobile Number'
+      permitsUmra: 'إصدار التصاريح',
+      skoraya: 'أسعفني',
+      qrcode: 'ماسح كود التحقيق'
     },
     tabaut: {
       title: 'تحذير',

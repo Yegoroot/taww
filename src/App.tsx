@@ -14,6 +14,7 @@ import { createTheme } from './theme/index'
 import i18n from './translate/i18n'
 import GlobalStyles from './components/GlobalStyle'
 
+// @ts-ignore
 const jss = create({ plugins: [...jssPreset().plugins, rtl()] })
 
 const App = () => {
@@ -26,6 +27,7 @@ const App = () => {
   return (
     <I18nextProvider i18n={i18n}>
       <ThemeProvider theme={theme}>
+        {/* @ts-ignore */}
         <StylesProvider jss={jss}>
           <React.StrictMode>
             <GlobalStyles />
