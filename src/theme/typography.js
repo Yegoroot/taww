@@ -42,7 +42,8 @@ export default {
     fontWeight: 500,
   },
   fontFamily: [
-    '"Cairo"',
+    'Almarai',
+    // '"Cairo"',
     // '"Droid Arabic Naskh"',
     '"Roboto"',
     '"Helvetica"',
